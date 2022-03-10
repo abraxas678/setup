@@ -10,7 +10,8 @@ root: ~/
 # pre: sudo /etc/rc.d/mysqld start
 
 # Runs in each window and pane before window/pane specific commands. Useful for setting up interpreter versions.
-# pre_window: rbenv shell 2.0.0-p247
+  pre_window: clear 
+#rbenv shell 2.0.0-p247
 
 # Pass command line options to tmux. Useful for specifying a different tmux.conf.
 # tmux_options: -f ~/.tmux.mac.conf
@@ -22,7 +23,7 @@ root: ~/
 # startup_window: editor
 
 # Specitifes (by index) which pane of the specified window will be selected on project startup. If not set, the first pane is used.
-# startup_pane: 1
+ startup_pane: 0
 
 # Controls whether the tmux session should be attached to automatically. Defaults to true.
 # attach: false
@@ -37,10 +38,10 @@ windows:
       # 'before' represents legacy functionality and will be deprecated in a future release, in favour of 'after'
       # synchronize: after
       panes:
-        - vim
-        - guard
-        - guard
-        - guard
-  - server: bundle exec rails s
+        - eins
+        - zwei
+        - drei
+        - vier
+#  - server: bundle exec rails s
   - logs: tail -f /volume2/docker/utils/path/mainline.dat
 
