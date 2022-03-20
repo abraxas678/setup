@@ -1,3 +1,5 @@
 [user]
 	email = abraxas678@gmail.com
 	name = abraxas678
+[core]
+	excludesfile = /root/.gitignore

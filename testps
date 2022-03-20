@@ -1,0 +1,5 @@
+CONTAINER ID   IMAGE                           COMMAND                  CREATED        STATUS                         PORTS     NAMES
+0f200a79d893   mumiehub/rclone-mount           "/init"                  2 hours ago    Restarting (0) 9 seconds ago             rclone_mount_gd
+c51f7b3b701c   abraxas678/jdownloader:backup   "/init"                  41 hours ago   Up 41 hours                              jdownloader
+80a866542868   abraxas678/worker:latest        "bash"                   6 days ago     Up 6 days                                worker
+bb7fe006403f   nodered/node-red                "npm --no-update-not…"   8 days ago     Up 4 days (healthy)                      node_red

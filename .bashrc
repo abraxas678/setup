@@ -21,7 +21,7 @@ alias ls='ls $LS_OPTIONS'
 alias ll='ls $LS_OPTIONS -l'
 alias l='ls $LS_OPTIONS -lA'
 
-source /volume2/docker/utils/path/alias.dat
+source /usr/local/bin/alias.dat
 
 # If not running interactively, don't do anything
 case $- in
