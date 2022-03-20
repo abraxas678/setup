@@ -10,7 +10,11 @@
 #
 # Tip: Looking for a nice color? Here's a one-liner to print colormap.
 #
+<<<<<<< HEAD
    for i in {0..255}; do print -Pn "%K{$i}  %k%F{$i}${(l:3::0:)i}%f " ${${(M)$((i%6)):#3}:+$'\n'}; done
+=======
+#   for i in {0..255}; do print -Pn "%K{$i}  %k%F{$i}${(l:3::0:)i}%f " ${${(M)$((i%6)):#3}:+$'\n'}; done
+>>>>>>> a08304ff497e0ba75e3e55524bdb2981917cffee
 
 # Temporarily change options.
 'builtin' 'local' '-a' 'p10k_config_opts'
