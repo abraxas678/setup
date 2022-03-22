@@ -64,11 +64,7 @@ ZSH_THEME="powerlevel10k/powerlevel10k"
 # You can also set it to another string to have that shown instead of the default red dots.
 # e.g. COMPLETION_WAITING_DOTS="%F{yellow}waiting...%f"
 # Caution: this setting can cause issues with multiline prompts in zsh < 5.7.1 (see #5765)
-<<<<<<< HEAD
-# COMPLETION_WAITING_DOTS="true"
-=======
  COMPLETION_WAITING_DOTS="true"
->>>>>>> a08304ff497e0ba75e3e55524bdb2981917cffee
 
 # Uncomment the following line if you want to disable marking untracked files
 # under VCS as dirty. This makes repository status check for large repositories
@@ -124,15 +120,9 @@ source /volume2/docker/utils/path/alias.dat
 source ~/powerlevel10k/powerlevel10k.zsh-theme
 
 #To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
-<<<<<<< HEAD
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 source $HOME/zsh-z/zsh-z.plugin.zsh
-export TERM=xterm-256color
-tmuxinator start w1
-=======
 bindkey '^j' history-substring-search-up  
 bindkey '^k' history-substring-search-down    
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 export TERM=xterm-256color
-tmux
->>>>>>> a08304ff497e0ba75e3e55524bdb2981917cffee

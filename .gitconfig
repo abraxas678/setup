@@ -3,3 +3,5 @@
 	name = abraxas678
 [core]
 	excludesfile = /root/.gitignore
+[remind]
+	paths = /volume2/docker_final/setup_new/*,/volume2/docker/utils/*,/root/*,/volume2/docker_final/jdownloader

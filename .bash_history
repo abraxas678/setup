@@ -133,3 +133,117 @@ cd i
 cd 'My Drive'
 ls
 exec zsh
+[ -n "$NNNLVL" ] && PS1="N$NNNLVL $PS1"
+rclone listremotes
+ls
+curl -Ls https://raw.githubusercontent.com/jarun/nnn/master/plugins/getplugs | sh
+export NNN_PLUG='f:finder;o:fzopen;p:mocplay;d:diffs;t:nmount;v:imgview'
+;
+;f
+nnn
+exec zsh#
+exec zsh
+cdp
+nano move_here.sh
+cdh
+cd setup_new/
+chmod +x *
+./rclone_secure_setup.sh 
+cd ..
+rclone copy ./.confi/rclone /root/.config/rclone -P
+sudo rclone copy ./.confi/rclo
+rclone copy ./.config/rclone /root/.config/rclone -P
+sudo rclone copy ./.config/rclone /root/.config/rclone -P
+sudo ls /root/.config/rclone -P
+sudo ls /root/.config/rclone
+cdp
+exec zsh
+zsh
+zsh
+exec zsh
+cdp
+nano move_here.sh 
+nano move_here.sh 
+sudo pathcopy.sh 
+nano move_here.sh 
+pc
+sudo pathcopy.sh 
+nano move_here.sh 
+sudo pathcopy.sh 
+nano move_here.sh 
+pc
+cd /volume2
+cd downloads2/
+cd jdownloader
+cd jdownloader2
+ls
+nnn
+nnn
+fdfind 
+fdfind -exec mv ./ALL
+fdfind * -exec mv ./ALL
+ls
+mkdir ALL
+ls 
+ ls ALL
+sudo mkdir ALL
+fdfind * -exec mv ./ALL
+ls
+fd -T
+fdfind -T
+fdfind --help
+nnn
+nano test.sh
+rkch
+nano test.sh
+sudo mkdir myvideos
+cat myvideofiles
+cat myvideofiles
+./test.sh
+./test.sh
+cd myvideos/
+ls
+ls ./fit_student_cuming_all_over_himself_p.2_biggd1ckfranky69_hls_720p.mp4
+ls fit_student_cuming_all_over_himself_p.2_biggd1ckfranky69_hls_720p.mp4
+ls
+cd ..
+ls fit_student_cuming_all_over_himself_p.2_biggd1ckfranky69_hls_720p.mp4
+ls fit_student_cuming_all_over_himself_p.2_biggd1ckfranky6*
+nano test.sh
+ls ./myvideos
+rclone lsf . --include="*Cuming_all_over_himself_p.2_biggd1*"
+ls
+cd 22MAR2022/
+ls
+move_files_to_my_level.sh 
+ls
+cd a_moved/
+ls
+cnfo.sh
+source cnfo.sh
+a
+ls
+cd..
+move_files_to_my_level.sh 
+move_files_to_my_level.sh 
+zsh
+exec zsh
+cd /volume2
+cd downloads2/
+cd jdownloader2
+ls
+sudo find . -type f -exec file -N -i -- {} + | grep video
+sudo find . -type f -exec file -N -i -- {} + | grep video | sed 's/: video.*//'
+sudo find . -type f -exec file -N -i -- {} + | grep video | sed 's/: video.*//' > myvideofiles
+zsh
+ls /home/abraxas678/.oh-my-zsh/oh-my-zsh.sh:
+ls /home/abraxas678/.oh-my-zsh/
+ls /home/abraxas678/.oh-my-zsh/oh-
+ls /home/abraxas678/.oh-my-zsh/oh-my-zsh.sh 
+./home/abraxas678/.oh-my-zsh/oh-my-zsh.sh 
+sh /home/abraxas678/.oh-my-zsh/oh-my-zsh.sh 
+zsh
+cdp
+nano zsh_plugins.dat 
+sudo nano zsh_plugins.dat 
+exec zsh
