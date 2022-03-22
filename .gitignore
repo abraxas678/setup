@@ -2,4 +2,5 @@
 .zsh_history
 .gitsecret/keys/random_seed
 .ssh/
+/.ssh
 .local/lib/python3.8/*
