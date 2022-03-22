@@ -1,6 +1,6 @@
 .cache/*
 .zsh_history
 .gitsecret/keys/random_seed
-.ssh/
 /.ssh
 .local/lib/python3.8/*
+.local/bin/httpx
