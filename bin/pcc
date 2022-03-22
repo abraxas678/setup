@@ -17,7 +17,7 @@ source color.dat
 printf "${RED}"
 ts=$(ts.sh)
 printf "${NC}"
-cp $mypath$1 AutoBackup-$1-$ts
+sudo cp $mypath$1 AutoBackup-$1-$ts
 echo
 echo backup AutoBackup-$1-$ts
 echo
