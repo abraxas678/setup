@@ -1,3 +1,4 @@
 .cache/*
 .zsh_history
 .gitsecret/keys/random_seed
+.ssh/*
