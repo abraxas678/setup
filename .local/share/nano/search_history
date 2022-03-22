@@ -19,10 +19,10 @@ find
 yygs
 gs
 mainline
-lsa
 mainl
 path
 rkch
+lsa
 
 sleep 0.2
 sleep 0.1
