@@ -268,3 +268,22 @@ nano alias.dat
 zsh
 lsa
 exec zsh
+ls
+lsa
+sbash
+ls
+cd /usr/local7bin
+cd /usr/local/bin
+ls
+rm *
+rm * -f
+sudo rm * -f
+sudo rm * -fr
+ls
+cdp
+cdp
+lsa
+zsh
+zsh
+zsh
+exec zsh
