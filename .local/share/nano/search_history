@@ -17,12 +17,16 @@ find
 yygs
 gs
 mainline
-mainl
 path
 rkch
 lsa
 plugin
 alias
+pc
+usr/lo
+agent
+mainl
+wait
 
 sleep 0.2
 sleep 0.1

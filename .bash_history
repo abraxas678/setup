@@ -289,3 +289,11 @@ zsh
 exec zsh
 exec zsh
 exec zsh
+zsh
+zsh
+zsh
+6: unknown command: <<<<<<<                                                                      [0/0]
+cdh
+nao .tmux.conf
+nano .tmux.conf
+exit
