@@ -1,0 +1,42 @@
+#!/bin/bash
+clear
+count=${1}
+if [[ ! $count > 2 ]];then
+  source app_choice.sh
+fi
+if [[ ! -f /volume2/docker/utils/path/$1 ]]; then
+  mypath="~/bin/"
+else
+  mypath="/volume2/docker/utils/path/"
+fi
+echo
+echo "mypath = $mypath"
+echo
+sleep 2
+source color.dat
+printf "${RED}"
+ts=$(ts.sh)
+printf "${NC}"
+cp $mypath$1 AutoBackup-$1-$ts
+echo
+echo backup AutoBackup-$1-$ts
+echo
+rclone move . snas:backup/docker/auto_backup --include="AutoBackup-$1-$ts" --max-depth 1 -P -v --skip-links
+nano $mypath$1
+#rclone copy /volume2/docker/utils/path/ /usr/local/bin --include="$1" --max-depth 1 --skip-links -P -v
+
+if [[ ! -f /volume2/docker/utils/path/$1 ]]; then
+  echo DONE
+else
+  echo "sudo mv $mympath$1 ~/bin/  ? (y/n)"
+  read -n 1 myp
+  if [[ $myp = *"y"* ]]; then
+    sudo mv $mypath$1 ~/bin/ 
+    echo
+    ls ~/bin/
+    echo
+    echo DONE
+  fi
+fi
+
+

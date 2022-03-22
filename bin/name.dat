@@ -1,0 +1,4 @@
+name=${PWD##*/}
+path=${PWD%/*}
+ts=$(date +"%s")
+
