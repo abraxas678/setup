@@ -20,6 +20,8 @@ yygs
 gs
 mainline
 lsa
+mainl
+path
 
 sleep 0.2
 sleep 0.1
