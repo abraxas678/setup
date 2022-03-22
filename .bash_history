@@ -287,3 +287,5 @@ zsh
 zsh
 zsh
 exec zsh
+exec zsh
+exec zsh

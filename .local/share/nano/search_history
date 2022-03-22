@@ -8,10 +8,8 @@ example
 stat
 example3
 ssh
-plugin
 yyggg
 gg
-alias
 sleep 1
 sleep 0.2
 done
@@ -23,6 +21,8 @@ mainl
 path
 rkch
 lsa
+plugin
+alias
 
 sleep 0.2
 sleep 0.1
