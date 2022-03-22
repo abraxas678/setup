@@ -1642,7 +1642,7 @@
     p10k segment -f 2 -i '*' -t "$(rclone about . | sed '/.*Total.*/d' | sed '/.*Used.*/d' | sed 's/.*Free://')"
   }
   function prompt_example3() {
-    p10k segment -f 2 -i '*' -t "$(cat /volume2/docker/utils/path/mainline.dat)"
+    p10k segment -f 2 -i '*' -t "$(cat ~/bin/mainline.dat)"
   }
   function prompt_example4() {
     p10k segment -f 4 -i '*' -t "$(echo $PWD | sed 's/volume/V/' | sed 's/docker_final/DF/' | sed 's/utils\/path/U\/path/' | sed 's/docker/D/')"

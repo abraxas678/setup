@@ -247,3 +247,24 @@ cdp
 nano zsh_plugins.dat 
 sudo nano zsh_plugins.dat 
 exec zsh
+rclone config
+rclone ls sec:
+rclone ls sec:root_tar
+zsh
+rm ~/.zcompdump*
+zsh
+exec zsh
+exec zsh
+zsh
+cdp
+cdh
+ls
+rm *.xz
+lsa
+cdp
+nano alias.dat
+cd ~/bin
+nano alias.dat
+zsh
+lsa
+exec zsh

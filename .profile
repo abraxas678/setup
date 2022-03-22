@@ -6,8 +6,4 @@ if [ "$BASH" ]; then
   fi
 fi
 
-<<<<<<< HEAD
 mesg n || true
-=======
-mesg n 2> /dev/null || true
->>>>>>> a08304ff497e0ba75e3e55524bdb2981917cffee

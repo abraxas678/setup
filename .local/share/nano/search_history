@@ -18,6 +18,8 @@ done
 find
 yygs
 gs
+mainline
+lsa
 
 sleep 0.2
 sleep 0.1
