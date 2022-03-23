@@ -27,6 +27,7 @@ usr/lo
 agent
 mainl
 wait
+color
 
 sleep 0.2
 sleep 0.1

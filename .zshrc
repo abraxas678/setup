@@ -17,116 +17,89 @@ if [[ "$ip" = "LAPTOP-HR2FJQGL" ]]; then
   sudo mount -t nfs 192.168.86.29:volume2/docker /volume2/docker -o nolock
   sudo mount -t nfs 192.168.86.29:volume2/downloads2 /volume2/downloads2 -o nolock
 fi
-source ~/.bashrc
-#source ~/enhancd/init.sh
-# If you come from bash you might have to change your $PATH.
 export PATH=$HOME/bin:/usr/local/bin:$PATH
 source ~/bin/path.dat
-# Path to your oh-my-zsh installation.
-export ZSH="$HOME/.oh-my-zsh"
-# Set name of the theme to load --- if set to "random", it will
-# load a random theme each time oh-my-zsh is loaded, in which case,
-# to know which specific one was loaded, run: echo $RANDOM_THEME
-# See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
+#export ZSH="$HOME/.oh-my-zsh"
 ZSH_THEME="powerlevel10k/powerlevel10k"
-#ZSH_THEME="robbyrussell"
-
-# Set list of themes to pick from when loading at random
-# Setting this variable when ZSH_THEME=random will cause zsh to load
-# a theme from this variable instead of looking in $ZSH/themes/
-# If set to an empty array, this variable will have no effect.
-# ZSH_THEME_RANDOM_CANDIDATES=( "robbyrussell" "agnoster" )
-
-# Uncomment the following line to use case-sensitive completion.
-# CASE_SENSITIVE="true"
-
-# Uncomment the following line to use hyphen-insensitive completion.
-# Case-sensitive completion must be off. _ and - will be interchangeable.
-# HYPHEN_INSENSITIVE="true"
-
-# Uncomment one of the following lines to change the auto-update behavior
-# zstyle ':omz:update' mode disabled  # disable automatic updates
-# zstyle ':omz:update' mode auto      # update automatically without asking
-# zstyle ':omz:update' mode reminder  # just remind me to update when it's time
-
-# Uncomment the following line to change how often to auto-update (in days).
-# zstyle ':omz:update' frequency 13
-
-# Uncomment the following line if pasting URLs and other text is messed up.
-# DISABLE_MAGIC_FUNCTIONS="true"
-
-# Uncomment the following line to disable colors in ls.
-# DISABLE_LS_COLORS="true"
-
-# Uncomment the following line to disable auto-setting terminal title.
-# DISABLE_AUTO_TITLE="true"
-
-# Uncomment the following line to enable command auto-correction.
-# ENABLE_CORRECTION="true"
-
-# Uncomment the following line to display red dots whilst waiting for completion.
-# You can also set it to another string to have that shown instead of the default red dots.
-# e.g. COMPLETION_WAITING_DOTS="%F{yellow}waiting...%f"
-# Caution: this setting can cause issues with multiline prompts in zsh < 5.7.1 (see #5765)
- COMPLETION_WAITING_DOTS="true"
-
-# Uncomment the following line if you want to disable marking untracked files
-# under VCS as dirty. This makes repository status check for large repositories
-# much, much faster.
-# DISABLE_UNTRACKED_FILES_DIRTY="true"
-
-# Uncomment the following line if you want to change the command execution time
-# stamp shown in the history command output.
-# You can set one of the optional three formats:
-# "mm/dd/yyyy"|"dd.mm.yyyy"|"yyyy-mm-dd"
-# or set a custom format using the strftime function format specifications,
-# see 'man strftime' for details.
-# HIST_STAMPS="mm/dd/yyyy"
-
-# Would you like to use another custom folder than $ZSH/custom?
-# ZSH_CUSTOM=/path/to/new-custom-folder
-
-# Which plugins would you like to load?
-# Standard plugins can be found in $ZSH/plugins/
-# Custom plugins may be added to $ZSH_CUSTOM/plugins/
-# Example format: plugins=(rails git textmate ruby lighthouse)
-# Add wisely, as too many plugins slow down shell startup.
-#plugins=(git)
-source ~/bin/zsh_plugins.dat
-source $ZSH/oh-my-zsh.sh
-
-# User configuration
-
-# export MANPATH="/usr/local/man:$MANPATH"
-
-# You may need to manually set your language environment
-# export LANG=en_US.UTF-8
-
-# Preferred editor for local and remote sessions
-# if [[ -n $SSH_CONNECTION ]]; then
-#   export EDITOR='vim'
-# else
-#   export EDITOR='mvim'
-# fi
-
-# Compilation flags
-# export ARCHFLAGS="-arch x86_64"
-
-# Set personal aliases, overriding those provided by oh-my-zsh libs,
-# plugins, and themes. Aliases can be placed here, though oh-my-zsh
-# users are encouraged to define aliases within the ZSH_CUSTOM folder.
-# For a full list of active aliases, run `alias`.
-#
-# Example aliases
-# alias zshconfig="mate ~/.zshrc"
-# alias ohmyzsh="mate ~/.oh-my-zsh"
+COMPLETION_WAITING_DOTS="true"
+#source ~/bin/zsh_plugins.dat
+#source $ZSH/oh-my-zsh.sh
 source ~/bin/alias.dat
-source ~/powerlevel10k/powerlevel10k.zsh-theme
 
+#source ~/powerlevel10k/powerlevel10k.zsh-theme
 #To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
-[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
-source $HOME/zsh-z/zsh-z.plugin.zsh
-bindkey '^j' history-substring-search-up  
-bindkey '^k' history-substring-search-down    
-[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+#[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 export TERM=xterm-256color
+
+
+# This is just for git commits - you should always use emacs!!!
+export VISUAL=nano
+export EDITOR="$VISUAL"
+
+# Some useful aliases
+alias ze="$EDITOR ~/.zshrc"
+alias zs="source ~/.zshrc"
+
+# Path to your oh-my-zsh install
+export ZSH="$HOME/.oh-my-zsh"
+
+# Big cheese!! 🧀!! We're going to install a zsh package manager!
+
+# Using the nightly, with:
+# curl -L git.io/antigen-nightly > antigen.zsh
+source ~/antigen.zsh
+
+# Load the oh-my-zsh library
+antigen use oh-my-zsh
+
+# zsh has a ton of nice builtins!
+# here just my favs (I haven't even seen them all)
+antigen bundle git # autocompletions
+antigen bundle pip # autocompletions
+
+# A bit more exciting 😎
+antigen bundle command-not-found # suggests commands
+antigen bundle z # jump around!
+antigen bundle colored-man-pages # Neat man pages bro
+
+# zsh-users bundles (an awesome group of devs 🙏)
+antigen bundle zsh-users/zsh-syntax-highlighting
+antigen bundle zsh-users/zsh-completions
+antigen bundle zsh-users/zsh-autosuggestions # Game changer!
+
+antigen bundle magic-enter 
+antigen bundle copypath 
+antigen bundle safe-paste 
+antigen bundle tmux 
+antigen bundle fzf 
+antigen bundle copypath 
+antigen bundle cp 
+antigen bundle copybuffer
+
+
+
+# Shhh secret 🤫 bundles
+antigen bundle thefuck # 🙃
+
+# ESSENTIAL
+antigen bundle SinaKhalili/sina
+antigen bundle SinaKhalili/ignore-dollarsign
+
+# Experimental zone
+antigen bundle desyncr/auto-ls 
+antigen bundle andrewferrier/fzf-z 
+
+# Cool gitignore creation module
+antigen bundle voronkovich/gitignore.plugin.zsh 
+# Nicer git diffing
+antigen bundle zdharma/zsh-diff-so-fancy
+
+# Let's add a theme! 
+antigen theme romkatv/powerlevel10k
+source .p10k.zsh
+
+# Always remember to antigen apply!! 🤗🤗
+antigen apply
+
+# Secret environments
+source ~/.zshrc.env
