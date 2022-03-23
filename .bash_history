@@ -297,3 +297,9 @@ cdh
 nao .tmux.conf
 nano .tmux.conf
 exit
+zsh
+zsh
+zsh
+zsh
+zsh
+zsh
