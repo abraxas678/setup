@@ -5,8 +5,9 @@
 base=$PWD
 source ts.sh
 sudo mkdir /work
+sudo chmod 777 /work -R
 echo counting files
-sudo rclone lsf . -R | wc -l > filecount1
+##############################   sudo rclone lsf . -R | wc -l > filecount1
 echo "/" > /work/folder-$ts   
 sudo rclone lsf . --files-only  --include "*.mp4" -R >> /work/files-$ts 
 #cat  /work/files-$ts  
@@ -20,7 +21,7 @@ while read line1; do
     sed -i "s/RKOREPLACE/$filename/g" ./$filepath$filename.nfo
 done </work/files-$ts
 
-rclone lsf . -R | wc -l > filecount2
+#############################              rclone lsf . -R | wc -l > filecount2
 
 echo
 echo filecount before $(cat filecount1) and now: $(cat filecount2)
