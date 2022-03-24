@@ -16,6 +16,7 @@ if [[ "$ip" = "LAPTOP-HR2FJQGL" ]]; then
   sudo mount -t nfs 192.168.86.29:volume2/cloudhq /volume2/cloudhq -o nolock
   sudo mount -t nfs 192.168.86.29:volume2/docker /volume2/docker -o nolock
   sudo mount -t nfs 192.168.86.29:volume2/downloads2 /volume2/downloads2 -o nolock
+  sudo mount -t nfs 192.168.86.29:volume1/sec /volume1/sec -o nolock
 fi
 export PATH=$HOME/bin:/usr/local/bin:$PATH
 source ~/bin/path.dat

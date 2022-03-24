@@ -1,6 +1,54 @@
 <?xml version="1.0"?>
 <RecentFiles>
   <RecentItem>
+    <URI>file:///home/abraxas678/.ssh/sshkeys/id_rsa</URI>
+    <Mime-Type>text/plain</Mime-Type>
+    <Timestamp>1648100322</Timestamp>
+    <Groups />
+  </RecentItem>
+  <RecentItem>
+    <URI>file:///volume1/sec/sshkeys/keypass/mykeyslinux.key</URI>
+    <Mime-Type>application/x-iwork-keynote-sffkey</Mime-Type>
+    <Timestamp>1648099698</Timestamp>
+    <Groups />
+  </RecentItem>
+  <RecentItem>
+    <URI>file:///volume1/sec/sshkeys/id_rsa</URI>
+    <Mime-Type>text/plain</Mime-Type>
+    <Timestamp>1648099280</Timestamp>
+    <Groups />
+  </RecentItem>
+  <RecentItem>
+    <URI>file:///volume1/sec/sshkeys/keypass/id_rsa</URI>
+    <Mime-Type>text/plain</Mime-Type>
+    <Timestamp>1648099061</Timestamp>
+    <Groups />
+  </RecentItem>
+  <RecentItem>
+    <URI>file:///volume1/sec/sshkeys/keypass/mykeyslinux.kdbx</URI>
+    <Mime-Type>application/x-keepass2</Mime-Type>
+    <Timestamp>1648098894</Timestamp>
+    <Groups />
+  </RecentItem>
+  <RecentItem>
+    <URI>file:///volume1/sec/sshkeys/keypass/mykeys3.kdbx</URI>
+    <Mime-Type>application/x-keepass2</Mime-Type>
+    <Timestamp>1648098095</Timestamp>
+    <Groups />
+  </RecentItem>
+  <RecentItem>
+    <URI>file:///volume1/sec/sshkeys/keypass/mykeys3.keyx</URI>
+    <Mime-Type>application/xml</Mime-Type>
+    <Timestamp>1648097941</Timestamp>
+    <Groups />
+  </RecentItem>
+  <RecentItem>
+    <URI>file:///volume1/sec/sshkeys/keypass/mykeys.keyx</URI>
+    <Mime-Type>application/xml</Mime-Type>
+    <Timestamp>1648097363</Timestamp>
+    <Groups />
+  </RecentItem>
+  <RecentItem>
     <URI>file:///root/mykeys3.keyx</URI>
     <Mime-Type>application/xml</Mime-Type>
     <Timestamp>1647601149</Timestamp>
