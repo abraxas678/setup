@@ -1,5 +1,7 @@
 #!/bin/bash
-for i in {0..10};do
+x=$(fdfind --type d | awk -F"/" 'NF > max {max = NF} END {print max}')
+x=$((x+1))
+for i in {0..$x};do
 	echo i $i
 	sudo find . -maxdepth $i -name "* *" -type d > folderlist
 #	cat folderlist

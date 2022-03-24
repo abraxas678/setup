@@ -1,5 +1,7 @@
+x=$(fdfind --type d | awk -F"/" 'NF > max {max = NF} END {print max}')
+x=$((x+1))
 i=1
-while [ "$i" -le "10" ]; do
+while [ "$i" -le "$x" ]; do
 
   find . -type f -name "* *" | while read file; do 
    # if [ "$file" != *"part"* ] && [ "$file" != *"tmp"* ] && [ "$file" != *"temp"* ]; then

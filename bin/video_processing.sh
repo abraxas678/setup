@@ -1,6 +1,8 @@
 #!/bin/bash
 echo $PWD
 echo
+mv mass ../
+echo
 echo FOLDER WHITESPACE REMOVAL
 settitle FOLDER WHITESPACE REMOVAL
 echo
@@ -15,7 +17,7 @@ echo
 #source file_processing.sh
 echo MOVE TO MY LEVEL
 echo
-source  move_files_to_my_level.sh      
+source move_files_to_my_level.sh      
 echo
 cd a_moved
 ehco
