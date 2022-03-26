@@ -9,4 +9,9 @@ else
 fi
 echo mydest $mydest
 echo
-rclone -i --backup-dir $3$mytrenner/backup/$(date +"%s")/ -Pv --fast-list $1 $2 $3 $4
+echo rclone -i --backup-dir $3$mytrennerbackup/$(date +"%s")/ -Pv --fast-list $1 $2 $3 $4 $5 $6 $7 $8 
+echo
+read -t 90 me
+rclone -i --backup-dir $3$mytrennerbackup/$(date +"%s")/ -Pv --fast-list $1 $2 $3 $4 $5 $6 $7 $8 $9
+
+

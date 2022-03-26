@@ -306,3 +306,8 @@ zsh
 zsh
 zsh
 zsh
+zsh
+kdel
+zsh
+zsh
+zsh

@@ -15,6 +15,7 @@ if [[ "$ip" = "LAPTOP-HR2FJQGL" ]]; then
   mount -t drvfs T: /volume1  
   sudo mount -t nfs 192.168.86.29:volume2/cloudhq /volume2/cloudhq -o nolock
   sudo mount -t nfs 192.168.86.29:volume2/docker /volume2/docker -o nolock
+  sudo mount -t nfs 192.168.86.29:volume2/docker_final /volume2/docker_final -o nolock
   sudo mount -t nfs 192.168.86.29:volume2/downloads2 /volume2/downloads2 -o nolock
   sudo mount -t nfs 192.168.86.29:volume1/sec /volume1/sec -o nolock
 fi
