@@ -1,0 +1,19 @@
+<MWFConfig>
+  <FileDialog>
+    <value name="FileNames" type="string-array">
+      <string>/home/abraxas678/.ssh/sshkeys/id_rsa</string>
+      <string>/volume1/sec/sshkeys/id_rsa</string>
+      <string>/volume1/sec/sshkeys/keypass/mykeyslinux.key</string>
+      <string>/volume1/sec/sshkeys/keypass/mykeyslinux.kdbx</string>
+      <string>/volume1/sec/sshkeys/keypass/id_rsa</string>
+      <string>/volume1/sec/sshkeys/keypass/mykeys.keyx</string>
+      <string>/volume1/sec/sshkeys/keypass/mykeys3.keyx</string>
+      <string>/volume1/sec/sshkeys/keypass/mykeys3.kdbx</string>
+    </value>
+    <value name="Width" type="int">563</value>
+    <value name="LastFolder" type="string">/home/abraxas678/.ssh/sshkeys</value>
+    <value name="Y" type="int">124</value>
+    <value name="Height" type="int">412</value>
+    <value name="X" type="int">263</value>
+  </FileDialog>
+</MWFConfig>
