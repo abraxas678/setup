@@ -46,6 +46,10 @@ printf "${BLUE2}"
     echo DONE
   fi
 fi
+echo
+echo rclone copy
+rclone_copy.sh
+echo
 printf "${NC}"
 
 

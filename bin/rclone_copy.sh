@@ -13,8 +13,8 @@ if [[ $mydiff -gt $v1 ]]; then
   echo; echo_name.sh rclone backup $v1
 #  cp ~/.bashrc ~/.config/bashrc
   cp ~/.config/rclone/rclone.conf ./rclone__$ts.conf
-  cp ~/.config/rclone/rclone.conf ./rclone__$ip.conf
-  rclone move . snas:sec/rclone --include rclone__$ip.conf --max-depth 1 -P --fast-list --skip-links
+#  cp ~/.config/rclone/rclone.conf ./rclone__$ip.conf
+#  rclone move . snas:sec/rclone/device --include rclone__$ip.conf --max-depth 1 -P --fast-list --skip-links
 #  rclone copy ~/.config/rclone/ gdsec: --include rclone.conf --max-depth 1 -P --fast-list --skip-links
 # rclone copy ~/.config/ snas:sec/config/ -P --fast-list --skip-links --max-depth 1
   rclone move . snas:sec/rclone --include rclone__$ts.conf --max-depth 1 -P --fast-list --skip-links
