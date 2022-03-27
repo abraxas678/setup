@@ -311,3 +311,26 @@ kdel
 zsh
 zsh
 zsh
+keepass
+keepass2
+keepass2
+keepass2
+cdh
+sudo chmod 777 .ssh -R
+sudo chmod 660 .ssh -R
+/home/abraxas678/.ssh/agent.env
+sudo chmod 440 /home/abraxas678/.ssh/agent.env
+/home/abraxas678/.ssh/agent.env
+sudo chmod 660 /home/abraxas678/.ssh/agent.env
+/home/abraxas678/.ssh/agent.env
+sudo chmod 666 /home/abraxas678/.ssh/agent.env
+/home/abraxas678/.ssh/agent.env
+sudo chmod 777 /home/abraxas678/.ssh/agent.env
+/home/abraxas678/.ssh/agent.env
+chmod 777 /home/abraxas678/.ssh/agent.env
+sudo chmod 777 /home/abraxas678/.ssh/agent.env
+/home/abraxas678/.ssh/agent.env
+sudo -i
+cdp
+zsh
+sudo -i

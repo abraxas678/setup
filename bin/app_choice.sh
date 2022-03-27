@@ -16,6 +16,7 @@ if (($count < 2)); then
   echo "6) .zshrc"
   echo "7) .bashrc"
   echo "8) .p10"
+  echo "9) alias.dat"
   read -n 1 choice
 
   if (($choice == 1)); then
@@ -34,6 +35,8 @@ if (($count < 2)); then
     app="nano ~/.bashrc"
   elif (($choice == 8)); then
     app="nano ~/.p10k.zsh"
+  elif (($choice == 9)); then
+    app="nano ~/bin/alias.dat"
   fi
 else
   app=$1

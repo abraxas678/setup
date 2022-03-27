@@ -28,8 +28,10 @@ agent
 mainl
 wait
 color
+/root
 
 sleep 0.2
 sleep 0.1
+$HOME
 
 
