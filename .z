@@ -5,7 +5,7 @@
 /volume2/docker_final|31|1648362908
 /mnt|10|1647960795
 /home/abraxas678/.antigen/bundles/robbyrussell/oh-my-zsh|9|1648346377
-/home/abraxas678/setup_new|44|1648366201
+/home/abraxas678/setup_new|63|1648379732
 /volume2/cloudhq|6|1647945096
 /volume2/downloads2/jdownloader2/21MAR2022/a_moved|7|1648315841
 /tmp/rsync-abraxas678|7|1647963133
@@ -13,7 +13,7 @@
 /volume2/docker/thisvid-crawler|34|1647989687
 /home/abraxas678/.antigen|2|1648346334
 /home/abraxas678/.config|4|1647992680
-/volume2/downloads2/jdownloader2|133|1648350285
+/volume2/downloads2/jdownloader2|139|1648379522
 /|4|1647957169
 /volume2/docker|30|1648007900
 /volume2/docker/dotfiles/zsh|2|1648007911
@@ -21,7 +21,7 @@
 /home/abraxas678/mlocate|7|1648001232
 /home/abraxas678/.antigen/bundles|2|1648346340
 /volume2/downloads2/jdownloader2/22MAR2022b|1|1648194335
-/home/abraxas678/bin|641|1648358828
+/home/abraxas678/bin|647|1648368206
 /home/abraxas678/.oh-my-zsh|6|1647992981
 /volume2/cloudhq/q|38|1647981377
 /home/abraxas678/zsh-z|5|1648346278
@@ -37,4 +37,4 @@
 /volume2/docker/utils/path|74|1648346126
 /home/abraxas678/powerlevel10k|5|1647993127
 /volume2/docker/utils/path/path|1|1648346120
-/volume2/downloads2|2|1647982550
+/volume2/downloads2|3|1648368234
