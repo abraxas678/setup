@@ -334,3 +334,30 @@ sudo -i
 cdp
 zsh
 sudo -i
+zsh
+ls
+zsh
+curl -fsSL https://raw.githubusercontent.com/mviereck/x11docker/master/x11docker | sudo bash -s -- --update
+x11docker
+x11docker --xorg --pulseaudio --gpu --homedir $HOME/.kodi_matrix/ xayon/docker-kodi-beta
+rclone config
+rclone ls snas:docker_final/kodi
+cd /volume2
+cd docker_final/
+cd kodi
+ls
+cd portable_data/
+rclone ls razer:
+rclone config
+rclone ls lenovo:
+rclone config
+rclone ls lenovo:
+rclone ls lenovo:PortableApps
+rclone ls lenovo:PortableApps/local
+rclone ls lenovo:PortableApps/local/Kodi19.4
+rclone ls lenovo:PortableApps/local/Kodi19.4/portable_data
+rclone lsd lenovo:PortableApps/local/Kodi19.4/portable_data
+rclone sync lenovo:PortableApps/local/Kodi19.4/portable_data . -P-v
+rclone sync lenovo:PortableApps/local/Kodi19.4/portable_data . -P -v
+sudo -i
+zsh

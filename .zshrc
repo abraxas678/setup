@@ -8,6 +8,8 @@ ip=$(hostname)
 if [[ "$ip" = "LAPTOP-HR2FJQGL" ]]; then
   mkdir /mnt/t
   mkdir /volume1
+  mkdir /volume1/sec
+  mkdir /volume1/supersec
   mkdir /volume2
   mkdir /volume2/cloudhq
   mount -t drvfs T: /mnt/t
@@ -18,13 +20,14 @@ if [[ "$ip" = "LAPTOP-HR2FJQGL" ]]; then
   sudo mount -t nfs 192.168.86.29:volume2/docker_final /volume2/docker_final -o nolock
   sudo mount -t nfs 192.168.86.29:volume2/downloads2 /volume2/downloads2 -o nolock
   sudo mount -t nfs 192.168.86.29:volume1/sec /volume1/sec -o nolock
+  sudo mount -t nfs 192.168.86.29:volume1/supersec /volume1/supersec -o nolock
 fi
+export SSH_AUTH_SOCK=/home/abraxas678/keeagent.socket
 export PATH=$HOME/bin:/usr/local/bin:$PATH
 source ~/bin/path.dat
 #export ZSH="$HOME/.oh-my-zsh"
 ZSH_THEME="powerlevel10k/powerlevel10k"
 COMPLETION_WAITING_DOTS="true"
-#source ~/bin/zsh_plugins.dat
 #source $ZSH/oh-my-zsh.sh
 source ~/bin/alias.dat
 
@@ -44,6 +47,9 @@ alias zs="source ~/.zshrc"
 
 # Path to your oh-my-zsh install
 export ZSH="$HOME/.oh-my-zsh"
+
+source ~/bin/zsh_plugins.dat
+
 
 # Big cheese!! 🧀!! We're going to install a zsh package manager!
 
@@ -78,7 +84,11 @@ antigen bundle copypath
 antigen bundle cp 
 antigen bundle copybuffer
 
-
+antigen bundle bat
+antigen bundle ctop
+antigen bundle tig
+antigen bundle navi
+antigen bundle peco
 
 # Shhh secret 🤫 bundles
 antigen bundle thefuck # 🙃

@@ -7,7 +7,6 @@ example4
 example
 stat
 example3
-ssh
 yyggg
 gg
 sleep 1
@@ -19,8 +18,6 @@ gs
 mainline
 path
 rkch
-lsa
-plugin
 alias
 pc
 usr/lo
@@ -29,6 +26,10 @@ mainl
 wait
 color
 /root
+plugin
+ssh
+dotf
+lsa
 
 sleep 0.2
 sleep 0.1

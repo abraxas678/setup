@@ -1,2 +1,2 @@
-plugins=(git zshmarks sudo zsh-interactive-cd zsh-navigation-tools zsh-syntax-highlighting zsh-autosuggestions magic-enter safe-paste tmux fzf copypath cp copybuffer)
+plugins=(git k zshmarks sudo zsh-interactive-cd zsh-navigation-tools zsh-syntax-highlighting zsh-autosuggestions magic-enter safe-paste tmux fzf copypath cp copybuffer)
 # git-escape-magic 

@@ -1,6 +1,18 @@
 <?xml version="1.0"?>
 <RecentFiles>
   <RecentItem>
+    <URI>file:///home/abraxas678/keeagent.socket</URI>
+    <Mime-Type>text/x-systemd-unit</Mime-Type>
+    <Timestamp>1648462688</Timestamp>
+    <Groups />
+  </RecentItem>
+  <RecentItem>
+    <URI>file:///home/abraxas678/%25XDG_RUNTIME_DIR%25/keeagent.socket</URI>
+    <Mime-Type>text/x-systemd-unit</Mime-Type>
+    <Timestamp>1648462676</Timestamp>
+    <Groups />
+  </RecentItem>
+  <RecentItem>
     <URI>file:///home/abraxas678/.ssh/sshkeys/id_rsa</URI>
     <Mime-Type>text/plain</Mime-Type>
     <Timestamp>1648100322</Timestamp>
@@ -46,18 +58,6 @@
     <URI>file:///volume1/sec/sshkeys/keypass/mykeys.keyx</URI>
     <Mime-Type>application/xml</Mime-Type>
     <Timestamp>1648097363</Timestamp>
-    <Groups />
-  </RecentItem>
-  <RecentItem>
-    <URI>file:///root/mykeys3.keyx</URI>
-    <Mime-Type>application/xml</Mime-Type>
-    <Timestamp>1647601149</Timestamp>
-    <Groups />
-  </RecentItem>
-  <RecentItem>
-    <URI>file:///root/mykeys3.kdbx</URI>
-    <Mime-Type>application/x-keepass2</Mime-Type>
-    <Timestamp>1647601139</Timestamp>
     <Groups />
   </RecentItem>
 </RecentFiles>

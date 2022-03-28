@@ -1,0 +1,170 @@
+ï»¿2022-03-27 08:59:45.750 T:140039738262400  NOTICE: -----------------------------------------------------------------------
+2022-03-27 08:59:45.750 T:140039738262400  NOTICE: Starting Kodi from Debian (18.6 Debian package version: 2:18.6+dfsg1-2ubuntu1). Platform: Linux x86 64-bit
+2022-03-27 08:59:45.750 T:140039738262400  NOTICE: Using Release Kodi from Debian x64 build
+2022-03-27 08:59:45.750 T:140039738262400  NOTICE: Kodi from Debian compiled 2020-04-03 by GCC 9.3.0 for Linux x86 64-bit version 5.4.27 (328731)
+2022-03-27 08:59:45.750 T:140039738262400  NOTICE: Running on Ubuntu 20.04.4 LTS, kernel: Linux x86 64-bit version 5.10.16.3-microsoft-standard-WSL2
+2022-03-27 08:59:45.750 T:140039738262400  NOTICE: FFmpeg version/source: 4.2.4-1ubuntu0.1
+2022-03-27 08:59:45.750 T:140039738262400  NOTICE: Host CPU: 11th Gen Intel(R) Core(TM) i7-1165G7 @ 2.80GHz, 8 cores available
+2022-03-27 08:59:45.750 T:140039738262400  NOTICE: special://xbmc/ is mapped to: /usr/share/kodi
+2022-03-27 08:59:45.750 T:140039738262400  NOTICE: special://xbmcbin/ is mapped to: /usr/lib/x86_64-linux-gnu/kodi
+2022-03-27 08:59:45.750 T:140039738262400  NOTICE: special://xbmcbinaddons/ is mapped to: /usr/lib/x86_64-linux-gnu/kodi/addons
+2022-03-27 08:59:45.750 T:140039738262400  NOTICE: special://masterprofile/ is mapped to: /home/abraxas678/.kodi/userdata
+2022-03-27 08:59:45.750 T:140039738262400  NOTICE: special://envhome/ is mapped to: /home/abraxas678
+2022-03-27 08:59:45.750 T:140039738262400  NOTICE: special://home/ is mapped to: /home/abraxas678/.kodi
+2022-03-27 08:59:45.750 T:140039738262400  NOTICE: special://temp/ is mapped to: /home/abraxas678/.kodi/temp
+2022-03-27 08:59:45.750 T:140039738262400  NOTICE: special://logpath/ is mapped to: /home/abraxas678/.kodi/temp
+2022-03-27 08:59:45.750 T:140039738262400  NOTICE: The executable running is: /usr/lib/x86_64-linux-gnu/kodi/kodi-x11
+2022-03-27 08:59:45.750 T:140039738262400  NOTICE: Local hostname: LAPTOP-HR2FJQGL
+2022-03-27 08:59:45.750 T:140039738262400  NOTICE: Log File is located: /home/abraxas678/.kodi/temp/kodi.log
+2022-03-27 08:59:45.750 T:140039738262400  NOTICE: -----------------------------------------------------------------------
+2022-03-27 08:59:45.750 T:140039738262400    INFO: loading settings
+2022-03-27 08:59:45.750 T:140039738262400  NOTICE: special://profile/ is mapped to: special://masterprofile/
+2022-03-27 08:59:45.750 T:140039738262400   ERROR: CSettings: unable to load settings from special://masterprofile/guisettings.xml, creating new default settings
+2022-03-27 08:59:45.754 T:140039738262400   DEBUG: CSkinSettings: no <skinsettings> tag found
+2022-03-27 08:59:45.754 T:140039738262400  NOTICE: No settings file to load (special://xbmc/system/advancedsettings.xml)
+2022-03-27 08:59:45.754 T:140039738262400  NOTICE: No settings file to load (special://masterprofile/advancedsettings.xml)
+2022-03-27 08:59:45.754 T:140039738262400  NOTICE: Default Video Player: VideoPlayer
+2022-03-27 08:59:45.754 T:140039738262400  NOTICE: Default Audio Player: paplayer
+2022-03-27 08:59:45.754 T:140039738262400  NOTICE: Disabled debug logging due to GUI setting. Level 0.
+2022-03-27 08:59:45.754 T:140039738262400  NOTICE: Log level changed to "LOG_LEVEL_NORMAL"
+2022-03-27 08:59:45.816 T:140039738262400  NOTICE: PulseAudio: Server not running
+2022-03-27 08:59:45.837 T:140039738262400  NOTICE: ADDON: audioencoder.kodi.builtin.aac v1.0.0 installed
+2022-03-27 08:59:45.837 T:140039738262400  NOTICE: ADDON: audioencoder.kodi.builtin.wma v1.0.0 installed
+2022-03-27 08:59:45.837 T:140039738262400  NOTICE: ADDON: game.controller.default v1.0.8 installed
+2022-03-27 08:59:45.837 T:140039738262400  NOTICE: ADDON: game.controller.snes v1.0.8 installed
+2022-03-27 08:59:45.837 T:140039738262400  NOTICE: ADDON: kodi.binary.global.audioengine v1.0.1 installed
+2022-03-27 08:59:45.837 T:140039738262400  NOTICE: ADDON: kodi.binary.global.filesystem v1.0.2 installed
+2022-03-27 08:59:45.837 T:140039738262400  NOTICE: ADDON: kodi.binary.global.general v1.0.3 installed
+2022-03-27 08:59:45.837 T:140039738262400  NOTICE: ADDON: kodi.binary.global.gui v5.12.0 installed
+2022-03-27 08:59:45.837 T:140039738262400  NOTICE: ADDON: kodi.binary.global.main v1.0.14 installed
+2022-03-27 08:59:45.837 T:140039738262400  NOTICE: ADDON: kodi.binary.global.network v1.0.0 installed
+2022-03-27 08:59:45.837 T:140039738262400  NOTICE: ADDON: kodi.binary.instance.audiodecoder v2.0.0 installed
+2022-03-27 08:59:45.837 T:140039738262400  NOTICE: ADDON: kodi.binary.instance.audioencoder v2.0.0 installed
+2022-03-27 08:59:45.837 T:140039738262400  NOTICE: ADDON: kodi.binary.instance.game v1.1.0 installed
+2022-03-27 08:59:45.837 T:140039738262400  NOTICE: ADDON: kodi.binary.instance.imagedecoder v2.0.0 installed
+2022-03-27 08:59:45.837 T:140039738262400  NOTICE: ADDON: kodi.binary.instance.inputstream v2.0.8 installed
+2022-03-27 08:59:45.837 T:140039738262400  NOTICE: ADDON: kodi.binary.instance.peripheral v1.3.7 installed
+2022-03-27 08:59:45.837 T:140039738262400  NOTICE: ADDON: kodi.binary.instance.pvr v5.10.3 installed
+2022-03-27 08:59:45.837 T:140039738262400  NOTICE: ADDON: kodi.binary.instance.screensaver v2.0.0 installed
+2022-03-27 08:59:45.837 T:140039738262400  NOTICE: ADDON: kodi.binary.instance.vfs v2.0.0 installed
+2022-03-27 08:59:45.837 T:140039738262400  NOTICE: ADDON: kodi.binary.instance.videocodec v1.0.1 installed
+2022-03-27 08:59:45.837 T:140039738262400  NOTICE: ADDON: kodi.binary.instance.visualization v2.0.1 installed
+2022-03-27 08:59:45.837 T:140039738262400  NOTICE: ADDON: kodi.resource v1.0.0 installed
+2022-03-27 08:59:45.837 T:140039738262400  NOTICE: ADDON: metadata.album.universal v3.1.1 installed
+2022-03-27 08:59:45.837 T:140039738262400  NOTICE: ADDON: metadata.artists.universal v4.3.0 installed
+2022-03-27 08:59:45.837 T:140039738262400  NOTICE: ADDON: metadata.common.allmusic.com v3.2.0 installed
+2022-03-27 08:59:45.837 T:140039738262400  NOTICE: ADDON: metadata.common.fanart.tv v3.6.1 installed
+2022-03-27 08:59:45.837 T:140039738262400  NOTICE: ADDON: metadata.common.imdb.com v3.1.4 installed
+2022-03-27 08:59:45.837 T:140039738262400  NOTICE: ADDON: metadata.common.musicbrainz.org v2.2.1 installed
+2022-03-27 08:59:45.837 T:140039738262400  NOTICE: ADDON: metadata.common.theaudiodb.com v2.0.2 installed
+2022-03-27 08:59:45.837 T:140039738262400  NOTICE: ADDON: metadata.common.themoviedb.org v3.1.9 installed
+2022-03-27 08:59:45.837 T:140039738262400  NOTICE: ADDON: metadata.local v1.0.0 installed
+2022-03-27 08:59:45.837 T:140039738262400  NOTICE: ADDON: metadata.themoviedb.org v5.1.7 installed
+2022-03-27 08:59:45.837 T:140039738262400  NOTICE: ADDON: metadata.tvshows.themoviedb.org v3.1.0 installed
+2022-03-27 08:59:45.837 T:140039738262400  NOTICE: ADDON: repository.xbmc.org v3.1.6 installed
+2022-03-27 08:59:45.837 T:140039738262400  NOTICE: ADDON: resource.images.weathericons.default v1.1.8 installed
+2022-03-27 08:59:45.837 T:140039738262400  NOTICE: ADDON: resource.language.en_gb v2.0.1 installed
+2022-03-27 08:59:45.837 T:140039738262400  NOTICE: ADDON: resource.uisounds.kodi v1.0.0 installed
+2022-03-27 08:59:45.837 T:140039738262400  NOTICE: ADDON: screensaver.xbmc.builtin.black v1.0.33 installed
+2022-03-27 08:59:45.837 T:140039738262400  NOTICE: ADDON: screensaver.xbmc.builtin.dim v1.0.59 installed
+2022-03-27 08:59:45.837 T:140039738262400  NOTICE: ADDON: script.module.pil v1.1.7 installed
+2022-03-27 08:59:45.837 T:140039738262400  NOTICE: ADDON: script.module.pycryptodome v3.4.3 installed
+2022-03-27 08:59:45.837 T:140039738262400  NOTICE: ADDON: service.xbmc.versioncheck v0.4.6 installed
+2022-03-27 08:59:45.837 T:140039738262400  NOTICE: ADDON: skin.estouchy v2.0.28 installed
+2022-03-27 08:59:45.837 T:140039738262400  NOTICE: ADDON: skin.estuary v2.0.27 installed
+2022-03-27 08:59:45.837 T:140039738262400  NOTICE: ADDON: visualization.spectrum v3.0.3 installed
+2022-03-27 08:59:45.837 T:140039738262400  NOTICE: ADDON: webinterface.default v2.2.33 installed
+2022-03-27 08:59:45.837 T:140039738262400  NOTICE: ADDON: xbmc.addon v18.6.0 installed
+2022-03-27 08:59:45.837 T:140039738262400  NOTICE: ADDON: xbmc.core v0.1.0 installed
+2022-03-27 08:59:45.837 T:140039738262400  NOTICE: ADDON: xbmc.gui v5.14.0 installed
+2022-03-27 08:59:45.837 T:140039738262400  NOTICE: ADDON: xbmc.json v10.3.0 installed
+2022-03-27 08:59:45.837 T:140039738262400  NOTICE: ADDON: xbmc.metadata v2.1.0 installed
+2022-03-27 08:59:45.837 T:140039738262400  NOTICE: ADDON: xbmc.python v2.26.0 installed
+2022-03-27 08:59:45.837 T:140039738262400  NOTICE: ADDON: xbmc.webinterface v1.0.0 installed
+2022-03-27 08:59:45.847 T:140039738262400 WARNING: DBus connection failed: org.freedesktop.DBus.Error.FileNotFound - Failed to connect to socket /var/run/dbus/system_bus_socket: No such file or directory
+2022-03-27 08:59:45.853 T:140039721318144  NOTICE: No Devices found - retry: 4
+2022-03-27 08:59:47.355 T:140039721318144  NOTICE: No Devices found - retry: 3
+2022-03-27 08:59:48.857 T:140039721318144  NOTICE: No Devices found - retry: 2
+2022-03-27 08:59:50.359 T:140039721318144  NOTICE: No Devices found - retry: 1
+2022-03-27 08:59:51.861 T:140039721318144  NOTICE: Found 0 Lists of Devices
+2022-03-27 08:59:51.861 T:140039712925440   ERROR: CActiveAESink::OpenSink - no sink was returned
+2022-03-27 08:59:51.862 T:140039721318144   ERROR: ActiveAE::InitSink - returned error
+2022-03-27 08:59:51.896 T:140039738262400  NOTICE: Checking resolution 16
+2022-03-27 08:59:52.136 T:140039738262400  NOTICE: Using visual 0x21
+2022-03-27 08:59:52.362 T:140039712925440  NOTICE: Previous line repeats 1 times.
+2022-03-27 08:59:52.362 T:140039712925440   ERROR: CActiveAESink::OpenSink - no sink was returned
+2022-03-27 08:59:52.362 T:140039721318144   ERROR: ActiveAE::InitSink - returned error
+2022-03-27 08:59:52.385 T:140039738262400  NOTICE: VDPAU::CreateContext - creating decoder context
+2022-03-27 08:59:52.391 T:140039738262400  NOTICE: vdp_device = 0xffffffff vdp_st = 0x1
+2022-03-27 08:59:52.391 T:140039738262400   ERROR: (VDPAU) unable to init VDPAU - vdp_st = 0x1.  Falling back.
+2022-03-27 08:59:52.404 T:140039738262400  NOTICE: GL_VENDOR = Mesa Project
+2022-03-27 08:59:52.405 T:140039738262400  NOTICE: GL_RENDERER = Software Rasterizer
+2022-03-27 08:59:52.405 T:140039738262400  NOTICE: GL_VERSION = 1.4 (2.1 Mesa 10.5.4)
+2022-03-27 08:59:52.405 T:140039738262400  NOTICE: GL_SHADING_LANGUAGE_VERSION = NULL
+2022-03-27 08:59:52.405 T:140039738262400  NOTICE: GL_EXTENSIONS = GL_ARB_depth_texture GL_ARB_draw_buffers GL_ARB_fragment_program GL_ARB_fragment_program_shadow GL_ARB_multisample GL_ARB_multitexture GL_ARB_occlusion_query GL_ARB_point_parameters GL_ARB_point_sprite GL_ARB_shadow GL_ARB_texture_border_clamp GL_ARB_texture_compression GL_ARB_texture_cube_map GL_ARB_texture_env_add GL_ARB_texture_env_combine GL_ARB_texture_env_crossbar GL_ARB_texture_env_dot3 GL_ARB_texture_filter_anisotropic GL_ARB_texture_mirrored_repeat GL_ARB_texture_non_power_of_two GL_ARB_texture_rectangle GL_ARB_transpose_matrix GL_ARB_vertex_program GL_ARB_window_pos GL_EXT_abgr GL_EXT_bgra GL_EXT_blend_color GL_EXT_blend_equation_separate GL_EXT_blend_func_separate GL_EXT_blend_minmax GL_EXT_blend_subtract GL_EXT_copy_texture GL_EXT_draw_range_elements GL_EXT_fog_coord GL_EXT_framebuffer_object GL_EXT_multi_draw_arrays GL_EXT_packed_pixels GL_EXT_point_parameters GL_EXT_polygon_offset GL_EXT_rescale_normal GL_EXT_secondary_color GL_EXT_separate_specular_color GL_EXT_shadow_funcs GL_EXT_stencil_two_side GL_EXT_stencil_wrap GL_EXT_subtexture GL_EXT_texture GL_EXT_texture3D GL_EXT_texture_edge_clamp GL_EXT_texture_env_add GL_EXT_texture_env_combine GL_EXT_texture_env_dot3 GL_EXT_texture_filter_anisotropic GL_EXT_texture_lod_bias GL_EXT_texture_mirror_clamp GL_EXT_texture_object GL_EXT_texture_rectangle GL_EXT_vertex_array GL_3DFX_texture_compression_FXT1 GL_APPLE_packed_pixels GL_ATI_draw_buffers GL_ATI_texture_env_combine3 GL_ATI_texture_mirror_once GL_ATIX_texture_env_combine3 GL_IBM_texture_mirrored_repeat GL_INGR_blend_func_separate GL_MESA_pack_invert GL_MESA_ycbcr_texture GL_NV_blend_square GL_NV_depth_clamp GL_NV_fragment_program_option GL_NV_light_max_exponent GL_NV_point_sprite GL_NV_texgen_reflection GL_NV_texture_env_combine4 GL_NV_texture_rectangle GL_SGIS_generate_mipmap GL_SGIS_texture_border_clamp GL_SGIS_texture_edge_clamp GL_SGIS_texture_lod GL_SUN_multi_draw_arrays
+2022-03-27 08:59:52.405 T:140039738262400   ERROR: GL: Error compiling vertex shader
+2022-03-27 08:59:52.405 T:140039738262400   ERROR:  $ñü
+2022-03-27 08:59:52.405 T:140039738262400   ERROR: GL: Error compiling vertex shader: gl_shader_vert_default.glsl
+2022-03-27 08:59:52.406 T:140039738262400   ERROR: GUI Shader gl_shader_frag_default.glsl - compile and link failed
+2022-03-27 08:59:52.406 T:140039738262400   ERROR: GL: Error compiling vertex shader
+2022-03-27 08:59:52.406 T:140039738262400   ERROR:  $ñü
+2022-03-27 08:59:52.406 T:140039738262400   ERROR: GL: Error compiling vertex shader: gl_shader_vert.glsl
+2022-03-27 08:59:52.406 T:140039738262400   ERROR: GUI Shader gl_shader_frag_texture.glsl - compile and link failed
+2022-03-27 08:59:52.406 T:140039738262400   ERROR: CYUVShaderGLSL::CYUVShaderGLSL - failed to open file gl_shader_frag_texture_lim.glsl
+2022-03-27 08:59:52.406 T:140039738262400   ERROR: GL: Error compiling vertex shader
+2022-03-27 08:59:52.406 T:140039738262400   ERROR: €9Mš·U
+2022-03-27 08:59:52.406 T:140039738262400   ERROR: GL: Error compiling vertex shader: gl_shader_vert.glsl
+2022-03-27 08:59:52.406 T:140039738262400   ERROR: GUI Shader gl_shader_frag_texture_lim.glsl - compile and link failed
+2022-03-27 08:59:52.406 T:140039738262400   ERROR: GL: Error compiling vertex shader
+2022-03-27 08:59:52.406 T:140039738262400   ERROR:  $ñü
+2022-03-27 08:59:52.406 T:140039738262400   ERROR: GL: Error compiling vertex shader: gl_shader_vert.glsl
+2022-03-27 08:59:52.406 T:140039738262400   ERROR: GUI Shader gl_shader_frag_multi.glsl - compile and link failed
+2022-03-27 08:59:52.406 T:140039738262400   ERROR: GL: Error compiling vertex shader
+2022-03-27 08:59:52.406 T:140039738262400   ERROR:  $ñü
+2022-03-27 08:59:52.406 T:140039738262400   ERROR: GL: Error compiling vertex shader: gl_shader_vert.glsl
+2022-03-27 08:59:52.406 T:140039738262400   ERROR: GUI Shader gl_shader_frag_fonts.glsl - compile and link failed
+2022-03-27 08:59:52.406 T:140039738262400   ERROR: GL: Error compiling vertex shader
+2022-03-27 08:59:52.406 T:140039738262400   ERROR:  $ñü
+2022-03-27 08:59:52.406 T:140039738262400   ERROR: GL: Error compiling vertex shader: gl_shader_vert.glsl
+2022-03-27 08:59:52.406 T:140039738262400   ERROR: GUI Shader gl_shader_frag_texture_noblend.glsl - compile and link failed
+2022-03-27 08:59:52.406 T:140039738262400   ERROR: GL: Error compiling vertex shader
+2022-03-27 08:59:52.406 T:140039738262400   ERROR:  $ñü
+2022-03-27 08:59:52.406 T:140039738262400   ERROR: GL: Error compiling vertex shader: gl_shader_vert.glsl
+2022-03-27 08:59:52.406 T:140039738262400   ERROR: GUI Shader gl_shader_frag_multi_blendcolor.glsl - compile and link failed
+2022-03-27 08:59:52.407 T:140039738262400   ERROR: GL: Error compiling vertex shader
+2022-03-27 08:59:52.407 T:140039738262400   ERROR: °"ñü
+2022-03-27 08:59:52.407 T:140039738262400   ERROR: GL: Error compiling vertex shader: gl_shader_vert_default.glsl
+2022-03-27 08:59:52.407 T:140039738262400   ERROR: GUI Shader gl_shader_frag_default.glsl - compile and link failed
+2022-03-27 08:59:52.407 T:140039738262400   ERROR: GL: Error compiling vertex shader
+2022-03-27 08:59:52.407 T:140039738262400   ERROR: °"ñü
+2022-03-27 08:59:52.407 T:140039738262400   ERROR: GL: Error compiling vertex shader: gl_shader_vert.glsl
+2022-03-27 08:59:52.407 T:140039738262400   ERROR: GUI Shader gl_shader_frag_texture.glsl - compile and link failed
+2022-03-27 08:59:52.407 T:140039738262400   ERROR: CYUVShaderGLSL::CYUVShaderGLSL - failed to open file gl_shader_frag_texture_lim.glsl
+2022-03-27 08:59:52.407 T:140039738262400   ERROR: GL: Error compiling vertex shader
+2022-03-27 08:59:52.407 T:140039738262400   ERROR: `ÖLš·U
+2022-03-27 08:59:52.407 T:140039738262400   ERROR: GL: Error compiling vertex shader: gl_shader_vert.glsl
+2022-03-27 08:59:52.407 T:140039738262400   ERROR: GUI Shader gl_shader_frag_texture_lim.glsl - compile and link failed
+2022-03-27 08:59:52.407 T:140039738262400   ERROR: GL: Error compiling vertex shader
+2022-03-27 08:59:52.407 T:140039738262400   ERROR: °"ñü
+2022-03-27 08:59:52.407 T:140039738262400   ERROR: GL: Error compiling vertex shader: gl_shader_vert.glsl
+2022-03-27 08:59:52.407 T:140039738262400   ERROR: GUI Shader gl_shader_frag_multi.glsl - compile and link failed
+2022-03-27 08:59:52.407 T:140039738262400   ERROR: GL: Error compiling vertex shader
+2022-03-27 08:59:52.407 T:140039738262400   ERROR: °"ñü
+2022-03-27 08:59:52.407 T:140039738262400   ERROR: GL: Error compiling vertex shader: gl_shader_vert.glsl
+2022-03-27 08:59:52.407 T:140039738262400   ERROR: GUI Shader gl_shader_frag_fonts.glsl - compile and link failed
+2022-03-27 08:59:52.407 T:140039738262400   ERROR: GL: Error compiling vertex shader
+2022-03-27 08:59:52.407 T:140039738262400   ERROR: °"ñü
+2022-03-27 08:59:52.407 T:140039738262400   ERROR: GL: Error compiling vertex shader: gl_shader_vert.glsl
+2022-03-27 08:59:52.407 T:140039738262400   ERROR: GUI Shader gl_shader_frag_texture_noblend.glsl - compile and link failed
+2022-03-27 08:59:52.407 T:140039738262400   ERROR: GL: Error compiling vertex shader
+2022-03-27 08:59:52.407 T:140039738262400   ERROR: °"ñü
+2022-03-27 08:59:52.407 T:140039738262400   ERROR: GL: Error compiling vertex shader: gl_shader_vert.glsl
+2022-03-27 08:59:52.407 T:140039738262400   ERROR: GUI Shader gl_shader_frag_multi_blendcolor.glsl - compile and link failed
+2022-03-27 08:59:52.862 T:140039712925440   ERROR: CActiveAESink::OpenSink - no sink was returned
+2022-03-27 08:59:52.862 T:140039721318144   ERROR: ActiveAE::InitSink - returned error
+2022-03-27 08:59:53.362 T:140039712925440   ERROR: CActiveAESink::OpenSink - no sink was returned
+2022-03-27 08:59:53.362 T:140039721318144   ERROR: ActiveAE::InitSink - returned error
+2022-03-27 08:59:53.863 T:140039712925440   ERROR: CActiveAESink::OpenSink - no sink was returned
+2022-03-27 08:59:53.863 T:140039721318144   ERROR: ActiveAE::InitSink - returned error
+2022-03-27 08:59:54.363 T:140039712925440   ERROR: CActiveAESink::OpenSink - no sink was returned
+2022-03-27 08:59:54.363 T:140039721318144   ERROR: ActiveAE::InitSink - returned error
