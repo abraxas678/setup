@@ -8,7 +8,6 @@ example
 stat
 example3
 yyggg
-gg
 sleep 1
 sleep 0.2
 done
@@ -30,6 +29,7 @@ plugin
 ssh
 dotf
 lsa
+gg
 
 sleep 0.2
 sleep 0.1

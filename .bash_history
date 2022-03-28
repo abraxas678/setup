@@ -361,3 +361,9 @@ rclone sync lenovo:PortableApps/local/Kodi19.4/portable_data . -P-v
 rclone sync lenovo:PortableApps/local/Kodi19.4/portable_data . -P -v
 sudo -i
 zsh
+cd %XDG_RUNTIME_DIR%/keeagent.socket
+%XDG_RUNTIME_DIR%
+echo %XDG_RUNTIME_DIR%
+echo $%XDG_RUNTIME_DIR%
+echo $(%XDG_RUNTIME_DIR%)
+exec zsh
