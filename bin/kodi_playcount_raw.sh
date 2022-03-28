@@ -1,0 +1,1 @@
+curl --silent -X POST -H 'Content-Type: application/json' -i http://kodi:11223344@192.168.86.20:8080/jsonrpc --data '{ "jsonrpc": "2.0", "method": "Files.GetFileDetails", "params": { "file": "nfs://192.168.86.29", "media": "video", "properties": ["playcount"] }, "id": 1}'

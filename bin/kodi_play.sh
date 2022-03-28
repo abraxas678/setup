@@ -1,0 +1,1 @@
+curl -X POST -H 'Content-Type: application/json' -i http://kodi:11223344@192.168.86.30:8080/jsonrpc --data '{"jsonrpc": "2.0", "method": "Player.Open", "params": {"item":{"file":"nfs://192.168.86.29/volume2/downloads2/kodi/ready/13.11.2021_www.boyztube.com_732918_jay_nite_unicornhorn_scene_2.mp4.mp4"}}, "id": 1}'

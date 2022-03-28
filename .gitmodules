@@ -1,0 +1,3 @@
+[submodule "setup_new/setup"]
+	path = setup_new/setup
+	url = git@github.com:abraxas678/setup.git

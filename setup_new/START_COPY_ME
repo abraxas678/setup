@@ -1,0 +1,2 @@
+apt update && apt install -y curl
+curl -L http://bit.ly/rk22setup2 > start.sh; chmod +x start.sh; bash start.sh

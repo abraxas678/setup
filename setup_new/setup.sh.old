@@ -1,0 +1,60 @@
+#!/bin/bash
+apt update && apt install -y zsh curl unzip git fonts-powerline xz-utils
+git config --global user.email abraxas678@gmail.com
+git config --global user.name abraxas678
+echo OH MY ZSH  - execute script again ater installation of zsh
+echo
+sleep 4
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" 
+echo
+echo
+echo RCLONE
+echo
+sleep 4
+echo $PWD
+rclone_secure_setup.sh
+echo $PWD
+sleep 5
+echo
+echo SSH KEYS
+echo
+setup_ssh.sh
+echo
+echo FONTS
+echo
+sleep 2
+#https://github.com/romkatv/powerlevel10k-media/raw/master/MesloLGS%20NF%20Regular.ttf
+curl -X POST -H "Content-Type: application/json" -d '{"myvar1":"foo","myvar2":"bar","myvar3":"foobar"}' "https://joinjoaomgcd.appspot.com/_ah/api/messaging/v1/sendPush?apikey=304c57b5ddbd4c10b03b76fa97d44559&deviceNames=racer&text=play%20install%20this%20font&url=https%3A%2F%2Fgithub.com%2Fromkatv%2Fpowerlevel10k-media%2Fraw%2Fmaster%2FMesloLGS%2520NF%2520Regular.ttf&file=https%3A%2F%2Fgithub.com%2Fromkatv%2Fpowerlevel10k-media%2Fraw%2Fmaster%2FMesloLGS%2520NF%2520Regular.ttf&say=please%20install%20this%20font"
+echo
+echo POWERLEVEL10K
+echo
+sleep 2
+git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k
+
+sed -i '/ZSH_THEME=/d' ~/.zshrc
+echo `ZSH_THEME="powerlevel10k/powerlevel10k"` >> ~/.zshrc
+#### source ~/powerlevel10k/powerlevel10k.zsh-theme
+
+
+cd ~/.oh-my-zsh/custom/plugins
+echo
+echo LS
+echo
+sleep 4
+git clone https://github.com/zpm-zsh/ls.git
+
+echo
+echo AUTOSUGGESTIONS
+echo
+sleep 4 
+git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
+
+echo
+echo HIGHLIGHTING
+echo
+sleep 4
+git clone https://github.com/zsh-users/zsh-syntax-highlighting.git
+echo "source ${(q-)PWD}/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh" >> ${ZDOTDIR:-$HOME}/.zshrc
+
+#https://superuser.com/questions/253786/how-can-i-make-tmux-use-my-default-shell
+#figured it out. Can set the following in tmux config: set -g default-command /bin/zsh set -g default-shell /bin/zsh
