@@ -1,7 +1,7 @@
 #!/bin/bash
 #### SSH
 mkdir ~/.ssh
-rclone copy snas:sec/sshkeys ~/.ssh --include="id*" --include="me2" -P
+sudo rclone copy snas:sec/sshkeys ~/.ssh --include="id*" --include="me2" -P
 sudo chmod 400 ~/.ssh/* -R
 eval `ssh-agent -s`
 ssh-add ~/.ssh/id_rsa
