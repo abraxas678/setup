@@ -4,5 +4,5 @@ curl -X POST -H "Content-Type: application/json" -d '{"myvar1":"foo","myvar2":"b
 echo
 echo mytext $mytext
 echo
-mytext2="https://www.google.com/search?q=$mytext"
+mytext2="$mytext"
 curl -X POST -H "Content-Type: application/json" -d '{"myvar1":"foo","myvar2":"bar","myvar3":"foobar"}' "https://autoremotejoaomgcd.appspot.com/sendmessage?key=goo.gl:gcmAPA91bEbUPWyCvzMcQwm0n66RtS8SDJSqqTSRdJY8nwGuUVkMKUQrFq8rgSzKxhKrcFmkXUe8gVsUw4y36IQsP8CDz6B7eG7GWMsHXialA7dEH6cmnApnfycEMfbOdcQmqOGybZ8_mtg52dkpmAhlHHPnSojqzE5Vg&message=$mytext2"

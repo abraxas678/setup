@@ -1,0 +1,1 @@
+curl "http://autoremotejoaomgcd.appspot.com/registerpc?key=goo.gl:gcmAPA91bEbUPWyCvzMcQwm0n66RtS8SDJSqqTSRdJY8nwGuUVkMKUQrFq8rgSzKxhKrcFmkXUe8gVsUw4y36IQsP8CDz6B7eG7GWMsHXialA7dEH6cmnApnfycEMfbOdcQmqOGybZ8_mtg52dkpmAhlHHPnSojqzE5Vg&name=LINUX1&type=linux&publicip=91.65.188.120&localip=$(sudo ifconfig eth0 |grep "inet addr" |awk '{print $2}' |awk -F: '{print $2}')"
