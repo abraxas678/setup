@@ -1,5 +1,8 @@
 #!/bin/bash
 clear
+cd $HOME/setup
+sudo chmod +x *.sh
+sudo apt update && sudo apt install -y nano curl wget nfs-common xclip
 echo SETUP NEW
 echo "======================"
 echo "MKDIR"
@@ -37,10 +40,10 @@ cd setup
 echo; echo $PWD; echo
 chmod +x *
 echo
-echo "sudo apt install -y keepass2 tmux tmuxinator"
+echo "sudo apt install -y keepass2 tmux tmuxinator bat"
 echo
-sleep 3
-sudo apt install -y keepass2 tmux tmuxinator bat
+sleep 1
+sudo apt install -y keepass2 tmux tmuxinator bat 
 echo
 echo RCLONE
 echo
@@ -49,7 +52,7 @@ echo
 #echo $pw >> pwtmp
 #sleep 4
 echo $PWD
-sleep 3
+sleep 1
 echo
 #ip=$(hostname)
 #if [[ "$ip" = "LAPTOP-HR2FJQGL" ]]; then
@@ -63,31 +66,44 @@ echo
 #fi
 #sleep 5
 #echo
+rclonesetup=y
 echo
+echo "START RCLONE SETUP?  (y/n)"
+echo
+read -t 10 -n 1 rclonesetup
+if [[ $rclonesetup = "y" ]]; then
 source rclone_secure_setup.sh
+fi
 #curl -L https://raw.githubusercontent.com/abraxas678/setup_new/master/rclone_secure_setup.sh | bash
 echo
 echo
 echo $PWD
-sleep 3
+sleep 1
 echo
-#echo SSH KEYS
+sshsetup="y"
+echo "START SSH SETUP?  (y/n)"
 echo
-#cd $HOME/setup_new
-#sleep 5
+read -t 10 -n 1 sshsetup
+if [[ $sshsetup = "y" ]]; then
+echo SSH KEYS
 echo
-#bash setup_ssh.sh
+cd $HOME/setup
+sleep 1
+echo
+source setup_ssh.sh
 #curl -L https://raw.githubusercontent.com/abraxas678/setup_new/master/setup_ssh.sh | bash
 echo
-#echo SSH done
-#sleep 15
+echo SSH done
+sleep 1
+fi
 echo
 echo FONTS
 echo
-sleep 5
+sleep 1
 #https://github.com/romkatv/powerlevel10k-media/raw/master/MesloLGS%20NF%20Regular.ttf
-curl -X POST -H "Content-Type: application/json" -d '{"myvar1":"foo","myvar2":"bar","myvar3":"foobar"}' "https://joinjoaomgcd.appspot.com/_ah/api/messaging/v1/sendPush?apikey=304c57b5ddbd4c10b03b76fa97d44559&deviceNames=racer&text=play%20install%20this%20font&url=https%3A%2F%2Fgithub.com%2Fromkatv%2Fpowerlevel10k-media%2Fraw%2Fmaster%2FMesloLGS%2520NF%2520Regular.ttf&file=https%3A%2F%2Fgithub.com%2Fromkatv%2Fpowerlevel10k-media%2Fraw%2Fmaster%2FMesloLGS%2520NF%2520Regular.ttf&say=please%20install%20this%20font"
-sudo apt update && sudo apt install -y zsh fonts-powerline xz-utils wget fd-find mlocate
+curl -X POST -H "Content-Type: application/json" -d '{"myvar1":"foo","myvar2":"bar","myvar3":"foobar"}' "https://joinjoaomgcd.appspot.com/_ah/api/messaging/v1/sendPush?apikey=304c57b5ddbd4c10b03b76fa97d44559&deviceNames=razer,Chrome,ChromeRazer&text=play%20install%20this%20font&url=https%3A%2F%2Fgithub.com%2Fromkatv%2Fpowerlevel10k-media%2Fraw%2Fmaster%2FMesloLGS%2520NF%2520Regular.ttf&file=https%3A%2F%2Fgithub.com%2Fromkatv%2Fpowerlevel10k-media%2Fraw%2Fmaster%2FMesloLGS%2520NF%2520Regular.ttf&say=please%20install%20this%20font"
+sudo apt update && sudo apt install -y zsh fonts-powerline xz-utils wget fd-find 
+###mlocate  -----> in tmu aufsetzen
 ###### https://github.com/suin/git-remind
 ################## GIT REMIND
 cd $HOME; echo
@@ -98,7 +114,7 @@ cd $HOME; echo
 #echo
 echo $PWD
 echo
-sleep 3
+sleep 1
 #wget https://github.com/suin/git-remind/releases/download/v1.1.1/git-remind_1.1.1_Linux_x86_64.tar.gz
 #tar xf git-remind_1.1.1_Linux_x86_64.tar.gz
 #git config --global remind.paths '/volume2/docker_final/setup_new/*,/volume2/docker/utils/*,/root/*,/volume2/docker_final/jdownloader'
@@ -119,12 +135,24 @@ echo
 #cd /volume2/docker/utils
 #mv path path_old
 #git clone git@github.com:abraxas678/path.git
+chsh -s $(which zsh)
+curl -L git.io/antigen > antigen.zsh
 sudo mkdir /mytmp
-cd /mytmp
-sudo git clone git@github.com:abraxas678/dotfiles.git
-rclone move /mytmp/dotfiles $HOME/ -P -v
 cd $HOME
-rm -rf /mytmp
+userhome=$HOME
+git clone git@github.com:abraxas678/dotfiles.git
+sudo mv $userhome/dotfiles /mytmp/
+cd /mytmp
+rclone move /mytmp/dotfiles/ $HOME/ -P -v
+cd $HOME
+sudo rm -rf /mytmp
+mkdir ~/.antigen/bundles/
+mkdir ~/.antigen/bundles/robbyrussell/
+cd ~/.antigen/bundles/robbyrussell/
+git clone https://github.com/robbyrussell/oh-my-zsh.git
+mkdir ~/.antigen/bundles/romkatv/
+git clone https://github.com/romkatv/powerlevel10k.git
+cd $HOME
 #rm start.sh
 #rm git-remind*tar.gz*
 #rm gl*tar.gz*
