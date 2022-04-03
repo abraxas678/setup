@@ -102,7 +102,7 @@ echo
 sleep 1
 #https://github.com/romkatv/powerlevel10k-media/raw/master/MesloLGS%20NF%20Regular.ttf
 curl -X POST -H "Content-Type: application/json" -d '{"myvar1":"foo","myvar2":"bar","myvar3":"foobar"}' "https://joinjoaomgcd.appspot.com/_ah/api/messaging/v1/sendPush?apikey=304c57b5ddbd4c10b03b76fa97d44559&deviceNames=razer,Chrome,ChromeRazer&text=play%20install%20this%20font&url=https%3A%2F%2Fgithub.com%2Fromkatv%2Fpowerlevel10k-media%2Fraw%2Fmaster%2FMesloLGS%2520NF%2520Regular.ttf&file=https%3A%2F%2Fgithub.com%2Fromkatv%2Fpowerlevel10k-media%2Fraw%2Fmaster%2FMesloLGS%2520NF%2520Regular.ttf&say=please%20install%20this%20font"
-sudo apt update && sudo apt install -y zsh fonts-powerline xz-utils wget fd-find 
+sudo apt update && sudo apt install -y zsh fonts-powerline xz-utils wget  
 ###mlocate  -----> in tmu aufsetzen
 ###### https://github.com/suin/git-remind
 ################## GIT REMIND
@@ -169,3 +169,4 @@ if [[ $brewsetup = "y" ]]; then
   sudo apt-get install build-essential -y
   brew install gcc  
 fi
+brew install fd
