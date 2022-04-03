@@ -170,3 +170,5 @@ if [[ $brewsetup = "y" ]]; then
   brew install gcc  
 fi
 brew install fd
+brew install fzf
+$(brew --prefix)/opt/fzf/install
