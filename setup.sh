@@ -1,5 +1,5 @@
 #!/bin/bash
-clear
+#clear
 cd $HOME/setup
 sudo chmod +x *.sh
 sudo apt update && sudo apt install -y nano curl wget nfs-common xclip
@@ -66,6 +66,7 @@ echo
 #fi
 #sleep 5
 #echo
+cat $HOME/.config/rclone/rclone.conf
 rclonesetup=y
 echo
 echo "START RCLONE SETUP?  (y/n)"
@@ -159,6 +160,7 @@ cd $HOME
 #rm gl*tar.gz*
 #cd $HOME
 #exec zsh
+rm -rf $HOME/.antigen
 brewsetup="y"
 echo "START BREW SETUP?  (y/n)"
 echo
