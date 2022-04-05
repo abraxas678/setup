@@ -175,3 +175,4 @@ read -t 10 -n 1 brewsetup
 brew install fd
 brew install fzf
 $(brew --prefix)/opt/fzf/install
+brew install task
