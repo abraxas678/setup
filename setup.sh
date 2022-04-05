@@ -176,3 +176,4 @@ brew install fd
 brew install fzf
 $(brew --prefix)/opt/fzf/install
 brew install task
+sudo apt install python3-pip
