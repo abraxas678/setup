@@ -72,9 +72,9 @@ echo
 echo "START RCLONE SETUP?  (y/n)"
 echo
 read -t 10 -n 1 rclonesetup
-if [[ $rclonesetup = "y" ]]; then
+#if [[ $rclonesetup = "y" ]]; then
 source rclone_secure_setup.sh
-fi
+#fi
 #curl -L https://raw.githubusercontent.com/abraxas678/setup_new/master/rclone_secure_setup.sh | bash
 echo
 echo
@@ -85,7 +85,7 @@ sshsetup="y"
 echo "START SSH SETUP?  (y/n)"
 echo
 read -t 10 -n 1 sshsetup
-if [[ $sshsetup = "y" ]]; then
+#if [[ $sshsetup = "y" ]]; then
 echo SSH KEYS
 echo
 cd $HOME/setup
@@ -96,7 +96,7 @@ source setup_ssh.sh
 echo
 echo SSH done
 sleep 1
-fi
+#fi
 echo
 echo FONTS
 echo
@@ -165,13 +165,13 @@ brewsetup="y"
 echo "START BREW SETUP?  (y/n)"
 echo
 read -t 10 -n 1 brewsetup
-if [[ $brewsetup = "y" ]]; then
+#if [[ $brewsetup = "y" ]]; then
   /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
   echo 'eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"' >> /home/abrax/.zprofile
   eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
   sudo apt-get install build-essential -y
   brew install gcc  
-fi
+#fi
 brew install fd
 brew install fzf
 $(brew --prefix)/opt/fzf/install
