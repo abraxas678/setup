@@ -2,7 +2,11 @@
 #clear
 cd $HOME/setup
 sudo chmod +x *.sh
-sudo apt update && sudo apt install -y nano curl wget nfs-common xclip
+apt update
+sudo apt update 
+apt install sudo -y
+sudo apt install git
+sudo apt install -y nano curl wget nfs-common xclip
 echo SETUP NEW
 echo "======================"
 echo "MKDIR"
