@@ -1,6 +1,6 @@
 #!/bin/bash
 source color.dat
-printf "${BLUE5}"
+printf "${BLUE4}"
 #clear
 cd $HOME/setup
 sudo chmod +x *.sh
@@ -15,7 +15,7 @@ echo "======================"
 printf "${GREEN}"
 echo "######################  MOUNT"
 sleep 1
-printf "${BLUE5}"
+printf "${BLUE4}"
 echo "MKDIR"
 sudo mkdir /volume1
 sudo mkdir /volume2
@@ -38,12 +38,12 @@ echo "################################################### GIT"
 sleep 1
 git config --global user.email abraxas678@gmail.com
 git config --global user.name abraxas678
-printf "${BLUE5}"
+printf "${BLUE4}"
 #sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" 
 printf "${GREEN}"
 echo "##################### CLONE /SETUP"
 sleep 1
-printf "${BLUE5}"
+printf "${BLUE4}"
 cd $HOME
 git clone https://github.com/abraxas678/setup.git
 cd setup
@@ -55,11 +55,11 @@ echo "############################# APT"
 printf "${BLUE2}"
 echo "sudo apt install -y keepass2 tmux tmuxinator bat"
 sudo apt install -y keepass2 tmux tmuxinator bat 
-printf "${BLUE5}"
+printf "${BLUE4}"
 echo
 printf "${GREEN}"
 echo "#################################### RCLONE"
-printf "${BLUE5}"
+printf "${BLUE4}"
 slee 1
 echo
 echo $PWD
@@ -99,7 +99,7 @@ echo "##################  SSH SETUP"
 sleep 1
 echo "START SSH SETUP?  (y/n)"
 echo
-printf "${BLUE5}"
+printf "${BLUE4}"
 read -t 10 -n 1 sshsetup
 if [[ $sshsetup = "y" ]]; then
   echo SSH KEYS
