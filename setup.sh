@@ -160,9 +160,6 @@ if [[ $brewsetup != "n" ]]; then
   brew install gcc  
 fi
 #############################################################
-brew install fd
-brew install fzf
-$(brew --prefix)/opt/fzf/install
 sudo apt install -y taskwarrior
 sudo apt install -y python3-pip
 pip3 install --user git+https://github.com/bergercookie/taskwarrior-syncall
@@ -173,5 +170,8 @@ taskd.ca=/volume1/sec/sshkeys/tasks/ca.cert.pem
 taskd.server=inthe.am:53589
 taskd.credentials=inthe_am/amdamdes/3136474f-af8b-468c-9849-9798747c33c1
 taskd.trust=strict" >> ~/.taskrc
+brew install fd
+brew install fzf
+$(brew --prefix)/opt/fzf/install
 sudo apt autoremove
 exec zsh
