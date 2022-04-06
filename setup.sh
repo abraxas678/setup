@@ -1,4 +1,6 @@
 #!/bin/bash
+source color.dat
+printf "${BLUE5}"
 #clear
 cd $HOME/setup
 sudo chmod +x *.sh
@@ -7,9 +9,13 @@ sudo apt update
 apt install sudo -y
 sudo apt install git
 sudo apt install -y nano curl wget nfs-common xclip
+printf "${BLUE1}"
 echo SETUP NEW
 echo "======================"
-##################################################  MOUNT
+printf "${GREEN}"
+echo "######################  MOUNT"
+sleep 1
+printf "${BLUE5}"
 echo "MKDIR"
 sudo mkdir /volume1
 sudo mkdir /volume2
@@ -27,23 +33,34 @@ sudo mount -t nfs 192.168.86.29:volume2/docker_final /volume2/docker_final -o no
 #wget https://github.com/gitless-vcs/gitless/releases/download/v0.8.8/gl-v0.8.8-linux-x86_64.tar.gz
 #tar xf gl-v0.8.8-linux-x86_64.tar.gz
 #cp ./gl-v0.8.8*/* /usr/local/bin/gl
-################################################### GIT
+printf "${GREEN}"
+echo "################################################### GIT"
+sleep 1
 git config --global user.email abraxas678@gmail.com
 git config --global user.name abraxas678
+printf "${BLUE5}"
 #sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" 
-##################### CLONE /SETUP
+printf "${GREEN}"
+echo "##################### CLONE /SETUP"
+sleep 1
+printf "${BLUE5}"
 cd $HOME
 git clone https://github.com/abraxas678/setup.git
 cd setup
 echo; echo $PWD; echo
 chmod +x *
 echo
-############################################################# APT
+printf "${GREEN}"
+echo "############################# APT"
+printf "${BLUE2}"
 echo "sudo apt install -y keepass2 tmux tmuxinator bat"
 sudo apt install -y keepass2 tmux tmuxinator bat 
+printf "${BLUE5}"
 echo
-################################################################ RCLONE
-echo RCLONE
+printf "${GREEN}"
+echo "#################################### RCLONE"
+printf "${BLUE5}"
+slee 1
 echo
 echo $PWD
 sleep 1
@@ -77,8 +94,12 @@ echo
 echo $PWD
 echo
 sshsetup="y"
+printf "${GREEN}"
+echo "##################  SSH SETUP"
+sleep 1
 echo "START SSH SETUP?  (y/n)"
 echo
+printf "${BLUE5}"
 read -t 10 -n 1 sshsetup
 if [[ $sshsetup = "y" ]]; then
   echo SSH KEYS
