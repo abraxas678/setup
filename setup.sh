@@ -152,7 +152,7 @@ brewsetup="y"
 echo "START BREW SETUP?  (y/n)"
 echo
 read -t 10 -n 1 brewsetup
-if [[ $brewsetup = "y" ]]; then
+if [[ $brewsetup != "n" ]]; then
   /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
   echo 'eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"' >> /home/abrax/.zprofile
   eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
@@ -163,11 +163,11 @@ fi
 brew install fd
 brew install fzf
 $(brew --prefix)/opt/fzf/install
-sudo apt install taskwarrior
-sudo apt install python3-pip
+sudo apt install -y taskwarrior
+sudo apt install -y python3-pip
 pip3 install --user git+https://github.com/bergercookie/taskwarrior-syncall
 
-echo"taskd.certificate=/volume1/sec/sshkeys/tasks/private.certificate.pem
+echo "taskd.certificate=/volume1/sec/sshkeys/tasks/private.certificate.pem
 taskd.key=/volume1/sec/sshkeys/tasks/private.key.pem
 taskd.ca=/volume1/sec/sshkeys/tasks/ca.cert.pem
 taskd.server=inthe.am:53589
