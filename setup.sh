@@ -86,7 +86,7 @@ echo "START SSH SETUP?  (y/n)"
 echo
 printf "${BLUE3}"
 read -t 10 -n 1 sshsetup
-if [[ $sshsetup = "y" ]]; then
+if [[ $sshsetup != "n" ]]; then
   echo SSH KEYS
 echo
 cd $HOME/setup
@@ -109,46 +109,27 @@ sudo apt update && sudo apt install -y zsh fonts-powerline xz-utils wget
 sleep 1
 ################## GIT REMIND
 cd $HOME; echo
-#echo GIT REMIND
-#sleep 3
-#mkdir git-remind
-#cd git-remind
-#echo
-#wget https://github.com/suin/git-remind/releases/download/v1.1.1/git-remind_1.1.1_Linux_x86_64.tar.gz
-#tar xf git-remind_1.1.1_Linux_x86_64.tar.gz
-#git config --global remind.paths '/volume2/docker_final/setup_new/*,/volume2/docker/utils/*,/root/*,/volume2/docker_final/jdownloader'
-#git config --global remind.paths '$HOME/*,/setup/*,/volume2/docker_final/setup_new/*,/volume2/docker/utils/*,/root/*,/volume2/docker_final/jdownloader'
-#sleep 3
-echo
-#echo
-#echo RCLONE ROOT_TAR BEGINNT
-#echo
-#sleep 5
-#rclone copy gdsec:root_tar / -P -v --max-depth 1  --fast-list --skip-links
-#cd /
-#tar xf *root*.xz
-#echo
-#echo RCLONE TAR ENDE
-#echo
-#sleep 5
-#rclone sync path: /usr/local/bin -P -v --skip-links --fast-list 
-#cd /volume2/docker/utils
-#mv path path_old
-#git clone git@github.com:abraxas678/path.git
 ######################################   EINSTELLUNGEN
 chsh -s $(which zsh)
 curl -L git.io/antigen > antigen.zsh
 sudo mkdir /mytmp
 cd $HOME
 userhome=$HOME
-#####################################################  DOTFILES
+echo
+printf "${GREEN}"
+echo "#####################################################  DOTFILES"
+printf "${BLUE2}"
+echo
 git clone git@github.com:abraxas678/dotfiles.git
 sudo mv $userhome/dotfiles /mytmp/
 cd /mytmp
 rclone move /mytmp/dotfiles/ $HOME/ -P -v
 cd $HOME
 sudo rm -rf /mytmp
-############################################################ ANTIGEN
+printf "${GREEN}"
+echo
+echo "############################################################ ANTIGEN"
+printf "${BLUE2}"
 mkdir ~/.antigen/bundles/
 mkdir ~/.antigen/bundles/robbyrussell/
 cd ~/.antigen/bundles/robbyrussell/
@@ -162,7 +143,11 @@ cd $HOME
 #cd $HOME
 #exec zsh
 rm -rf $HOME/.antigen
-######################################################## BREW
+echo
+printf "${GREEN}"
+echo "######################################################## BREW"
+printf "${BLUE2}"
+echo
 brewsetup="y"
 echo "START BREW SETUP?  (y/n)"
 echo
