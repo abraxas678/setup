@@ -1,6 +1,6 @@
 #!/bin/bash
 source color.dat
-printf "${BLUE4}"
+printf "${BLUE3}"
 #clear
 cd $HOME/setup
 sudo chmod +x *.sh
@@ -15,7 +15,7 @@ echo "======================"
 printf "${GREEN}"
 echo "######################  MOUNT"
 sleep 1
-printf "${BLUE4}"
+printf "${BLUE2}"
 echo "MKDIR"
 sudo mkdir /volume1
 sudo mkdir /volume2
@@ -28,22 +28,16 @@ sudo mount -t nfs 192.168.86.29:volume1/sec /volume1/sec -o nolock
 sudo mount -t nfs 192.168.86.29:volume1/suprsec /volume1/supersec -o nolock
 sudo mount -t nfs 192.168.86.29:volume2/docker /volume2/docker -o nolock
 sudo mount -t nfs 192.168.86.29:volume2/docker_final /volume2/docker_final -o nolock
-#echo GITLESS
-#echo; sleep 5
-#wget https://github.com/gitless-vcs/gitless/releases/download/v0.8.8/gl-v0.8.8-linux-x86_64.tar.gz
-#tar xf gl-v0.8.8-linux-x86_64.tar.gz
-#cp ./gl-v0.8.8*/* /usr/local/bin/gl
 printf "${GREEN}"
 echo "################################################### GIT"
 sleep 1
 git config --global user.email abraxas678@gmail.com
 git config --global user.name abraxas678
-printf "${BLUE4}"
 #sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" 
 printf "${GREEN}"
 echo "##################### CLONE /SETUP"
 sleep 1
-printf "${BLUE4}"
+printf "${BLUE2}"
 cd $HOME
 git clone https://github.com/abraxas678/setup.git
 cd setup
@@ -55,35 +49,25 @@ echo "############################# APT"
 printf "${BLUE2}"
 echo "sudo apt install -y keepass2 tmux tmuxinator bat"
 sudo apt install -y keepass2 tmux tmuxinator bat 
-printf "${BLUE4}"
 echo
 printf "${GREEN}"
 echo "#################################### RCLONE"
-printf "${BLUE4}"
-slee 1
-echo
-echo $PWD
+printf "${BLUE2}"
 sleep 1
 echo
-#ip=$(hostname)
-#if [[ "$ip" = "LAPTOP-HR2FJQGL" ]]; then
-#  echo MOUNTING
-#  mkdir /mnt/t
-#  mkdir /volume1
-#  mkdir /volume2
-#  mount -t drvfs T: /mnt/t
-#  mount -t drvfs T: /volume2
-#  mount -t drvfs T: /volume1  
-#fi
-#sleep 5
+echo $PWD
 echo
+echo
+printf "${BLUE1}"
 echo ".conf vor setup:"
 echo
 cat $HOME/.config/rclone/rclone.conf
 rclonesetup=y
 echo
+printf "${GREEN}"
 echo "START RCLONE SETUP?  (y/n)"
 echo
+printf "${BLUE2}"
 read -t 10 -n 1 rclonesetup
 if [[ $rclonesetup = "y" ]]; then
   source rclone_secure_setup.sh
@@ -99,7 +83,7 @@ echo "##################  SSH SETUP"
 sleep 1
 echo "START SSH SETUP?  (y/n)"
 echo
-printf "${BLUE4}"
+printf "${BLUE3}"
 read -t 10 -n 1 sshsetup
 if [[ $sshsetup = "y" ]]; then
   echo SSH KEYS
