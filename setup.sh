@@ -182,3 +182,10 @@ $(brew --prefix)/opt/fzf/install
 brew install taskwarrior
 sudo apt install python3-pip
 pip3 install --user git+https://github.com/bergercookie/taskwarrior-syncall
+
+echo"taskd.certificate=/path/to/private.certificate.pem
+taskd.key=/path/to/private.key.pem
+taskd.ca=/path/to/ca.cert.pem
+taskd.server=inthe.am:53589
+taskd.credentials=inthe_am/amdamdes/3136474f-af8b-468c-9849-9798747c33c1
+taskd.trust=strict" >> ~/.taskrc
