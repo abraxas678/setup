@@ -172,7 +172,7 @@ fi
 brew install fd
 brew install fzf
 $(brew --prefix)/opt/fzf/install
-brew install taskwarrior
+sudo apt install taskwarrior
 sudo apt install python3-pip
 pip3 install --user git+https://github.com/bergercookie/taskwarrior-syncall
 
