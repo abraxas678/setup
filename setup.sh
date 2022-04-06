@@ -182,3 +182,4 @@ taskd.ca=/volume1/sec/sshkeys/tasks/ca.cert.pem
 taskd.server=inthe.am:53589
 taskd.credentials=inthe_am/amdamdes/3136474f-af8b-468c-9849-9798747c33c1
 taskd.trust=strict" >> ~/.taskrc
+exec zsh
