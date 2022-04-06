@@ -10,9 +10,11 @@ apt install sudo -y
 sudo apt install git
 sudo apt install -y nano curl wget nfs-common xclip
 printf "${BLUE1}"
+echo
 echo SETUP NEW
 echo "======================"
 printf "${GREEN}"
+echo
 echo "######################  MOUNT"
 sleep 1
 printf "${BLUE2}"
@@ -68,7 +70,7 @@ echo "START RCLONE SETUP?  (y/n)"
 echo
 printf "${BLUE2}"
 read -t 10 -n 1 rclonesetup
-if [[ $rclonesetup = "y" ]]; then
+if [[ $rclonesetup != "n" ]]; then
   source rclone_secure_setup.sh
 fi
 #curl -L https://raw.githubusercontent.com/abraxas678/setup_new/master/rclone_secure_setup.sh | bash
