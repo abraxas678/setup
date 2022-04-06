@@ -62,7 +62,6 @@ printf "${BLUE1}"
 echo ".conf vor setup:"
 echo
 cat $HOME/.config/rclone/rclone.conf
-rclonesetup=y
 echo
 printf "${GREEN}"
 echo "START RCLONE SETUP?  (y/n)"
