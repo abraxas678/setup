@@ -56,7 +56,7 @@ cp ~/setup/keepassxc.ini ~/.config/keepassxc/
 printf "${GREEN}"
 echo "############################# APT"
 printf "${BLUE2}"
-echo "sudo apt install -y keepassxc tmux tmuxinator bat"
+echo "sudo apt install -y tmux tmuxinator bat"
 sudo apt install -y tmux tmuxinator bat 
 echo
 printf "${GREEN}"
@@ -97,7 +97,7 @@ echo
 sshsetup="n"
 printf "${BLUE3}"
 read -t 10 -n 1 sshsetup
-if [[ $sshsetup != "n" ]]; then
+if [[ $sshsetup = "y" ]]; then
   echo SSH KEYS - starting setup
   sleep 5
 echo
@@ -130,6 +130,9 @@ userhome=$HOME
 echo
 printf "${GREEN}"
 eval $(ssh-agent)
+echo $SSH_AUTH_SOCK
+echo $SSH_AUTH_SOCK | clip.exe
+sleep 3
 keepassxc
 echo "#####################################################  DOTFILES"
 printf "${BLUE2}"
