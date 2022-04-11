@@ -1,4 +1,9 @@
 #!/bin/bash
+echo
+echo GESTARTET MIT X11 UNTERSTÜTZUNG?
+echo BUTTON
+echo
+read me
 sudo apt update && sudo apt install git curl wget nano -y
 cd $HOME
 rm -rf $HOME/setup
