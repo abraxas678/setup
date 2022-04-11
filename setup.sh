@@ -51,6 +51,7 @@ chmod +x *
 echo
 sudo mkdir ~/.config
 sudo mkdir ~/.config/keepassxc
+sudo chmod 777 /home/abraxas678/.config/keepassxc -R
 cp ~/setup/keepassxc.ini ~/.config/keepassxc/
 printf "${GREEN}"
 echo "############################# APT"
