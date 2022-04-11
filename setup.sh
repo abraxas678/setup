@@ -25,7 +25,7 @@ sudo mkdir /volume1/sec
 sudo mkdir /volume1/supersec
 sudo mkdir /volume2/docker
 sudo mkdir /volume2/docker_final
-sudo apt update && sudo apt install -y curl unzip git wget nfs-common
+sudo apt update && sudo apt install -y curl unzip git wget nfs-common jq
 sudo mount -t nfs 192.168.86.29:volume1/sec /volume1/sec -o nolock
 sudo mount -t nfs 192.168.86.29:volume1/suprsec /volume1/supersec -o nolock
 sudo mount -t nfs 192.168.86.29:volume2/docker /volume2/docker -o nolock
