@@ -168,4 +168,5 @@ brew install fd
 brew install fzf
 $(brew --prefix)/opt/fzf/install
 sudo apt autoremove
+keepassxc
 exec zsh
