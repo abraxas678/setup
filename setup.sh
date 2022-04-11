@@ -69,16 +69,19 @@ printf "${GREEN}"
 echo "START RCLONE SETUP?  (y/n)"
 echo
 printf "${BLUE2}"
+rclonesetup="n"
 read -t 10 -n 1 rclonesetup
-if [[ $rclonesetup != "n" ]]; then
-  source rclone_secure_setup.sh
+if [[ $rclonesetup = "y" ]]; then
+   echo starting rclone setup
+   sleep 5
+   source rclone_secure_setup.sh
 fi
 #curl -L https://raw.githubusercontent.com/abraxas678/setup_new/master/rclone_secure_setup.sh | bash
 echo
 echo
 echo $PWD
 echo
-sshsetup="y"
+sshsetup="n"
 printf "${GREEN}"
 echo "##################  SSH SETUP"
 sleep 1
@@ -87,7 +90,7 @@ echo
 printf "${BLUE3}"
 read -t 10 -n 1 sshsetup
 if [[ $sshsetup != "n" ]]; then
-  echo SSH KEYS
+  echo SSH KEYS - starting setup
 echo
 cd $HOME/setup
 sleep 1
@@ -117,6 +120,7 @@ cd $HOME
 userhome=$HOME
 echo
 printf "${GREEN}"
+keepassxc
 echo "#####################################################  DOTFILES"
 printf "${BLUE2}"
 echo
@@ -168,5 +172,4 @@ brew install fd
 brew install fzf
 $(brew --prefix)/opt/fzf/install
 sudo apt autoremove
-keepassxc
 exec zsh
