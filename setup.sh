@@ -182,7 +182,7 @@ if [[ $brewsetup != "n" ]]; then
   brew install gcc  
 fi
 #############################################################
-sudo apt install -y taskwarrior android-tools-adb
+sudo apt install -y taskwarrior android-tools-adb thefuck
 #sudo apt install -y python3-pip
 #pip3 install --user git+https://github.com/bergercookie/taskwarrior-syncall
 
