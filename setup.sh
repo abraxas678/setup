@@ -8,7 +8,7 @@ apt update
 sudo apt update 
 apt install sudo -y
 sudo apt install git
-sudo apt install -y nano curl wget nfs-common xclip keepassxc
+sudo apt install -y nano curl wget nfs-common xclip keepassxc ssh-askpass
 printf "${BLUE1}"
 echo
 echo SETUP NEW
