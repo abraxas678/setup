@@ -133,8 +133,11 @@ eval $(ssh-agent)
 echo $SSH_AUTH_SOCK
 echo $SSH_AUTH_SOCK | clip.exe
 cp ~/setup/keepassxc.ini ~/.config/keepassxc/
-sleep 3
+echo DO NOT CLOSE KEEPASSXC -- CHECK SETTINGS KEYS 
+sleep 7
 keepassxc &
+echo KEY WHEN DONE
+read me
 echo "#####################################################  DOTFILES"
 printf "${BLUE2}"
 echo
