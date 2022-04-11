@@ -76,6 +76,7 @@ echo "START RCLONE SETUP?  (y/n)"
 echo
 printf "${BLUE2}"
 rclonesetup="n"
+echo "default: n  --  t 10"
 read -t 10 -n 1 rclonesetup
 if [[ $rclonesetup = "y" ]]; then
    echo starting rclone setup
@@ -87,28 +88,28 @@ echo
 echo
 echo $PWD
 echo
-sshsetup="n"
-printf "${GREEN}"
-echo "##################  SSH SETUP"
-sleep 1
-echo "START SSH SETUP?  (y/n)"
-echo
-sshsetup="n"
-printf "${BLUE3}"
-read -t 10 -n 1 sshsetup
-if [[ $sshsetup = "y" ]]; then
-  echo SSH KEYS - starting setup
-  sleep 5
-echo
-cd $HOME/setup
-sleep 1
-echo
-source setup_ssh.sh
-#curl -L https://raw.githubusercontent.com/abraxas678/setup_new/master/setup_ssh.sh | bash
-echo
-echo SSH done
-sleep 1
-fi
+#sshsetup="n"
+#printf "${GREEN}"
+#echo "##################  SSH SETUP"
+#sleep 1
+#echo "START SSH SETUP?  (y/n)"
+#echo
+#sshsetup="n"
+#printf "${BLUE3}"
+#read -t 10 -n 1 sshsetup
+#if [[ $sshsetup = "y" ]]; then
+#  echo SSH KEYS - starting setup
+#  sleep 5
+#echo
+#cd $HOME/setup
+#sleep 1
+#echo
+#source setup_ssh.sh
+##curl -L https://raw.githubusercontent.com/abraxas678/setup_new/master/setup_ssh.sh | bash
+#echo
+#echo SSH done
+#sleep 1
+#fi
 echo
 echo FONTS
 echo
@@ -117,7 +118,7 @@ curl -X POST -H "Content-Type: application/json" -d '{"myvar1":"foo","myvar2":"b
 sudo apt update && sudo apt install -y zsh fonts-powerline xz-utils wget  
 ###mlocate  -----> in tmu aufsetzen
 ###### https://github.com/suin/git-remind
-sleep 1
+#sleep 1
 ################## GIT REMIND
 cd $HOME; echo
 ######################################   EINSTELLUNGEN
@@ -134,13 +135,16 @@ echo $SSH_AUTH_SOCK
 echo $SSH_AUTH_SOCK | clip.exe
 cp ~/setup/keepassxc.ini ~/.config/keepassxc/
 echo DO NOT CLOSE KEEPASSXC -- CHECK SETTINGS KEYS 
-sleep 7
+echo "BUTTON 120"
+read -t 120 me
 keepassxc &
+echo
 echo KEY WHEN DONE
 read me
 echo "#####################################################  DOTFILES"
 printf "${BLUE2}"
 echo
+cd $HOME
 rm -rf ~/dotfiles
 git clone git@github.com:abraxas678/dotfiles.git
 sudo mv $userhome/dotfiles /mytmp/
