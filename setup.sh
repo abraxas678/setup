@@ -49,8 +49,8 @@ echo
 printf "${GREEN}"
 echo "############################# APT"
 printf "${BLUE2}"
-echo "sudo apt install -y keepass2 tmux tmuxinator bat"
-sudo apt install -y keepass2 tmux tmuxinator bat 
+echo "sudo apt install -y keepassxc tmux tmuxinator bat"
+sudo apt install -y keepassxc tmux tmuxinator bat 
 echo
 printf "${GREEN}"
 echo "#################################### RCLONE"
