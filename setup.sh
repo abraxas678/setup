@@ -69,25 +69,30 @@ printf "${GREEN}"
 echo "START RCLONE SETUP?  (y/n)"
 echo
 printf "${BLUE2}"
+rclonesetup="n"
 read -t 10 -n 1 rclonesetup
-if [[ $rclonesetup != "n" ]]; then
-  source rclone_secure_setup.sh
+if [[ $rclonesetup = "y" ]]; then
+   echo starting rclone setup
+   sleep 5
+   source rclone_secure_setup.sh
 fi
 #curl -L https://raw.githubusercontent.com/abraxas678/setup_new/master/rclone_secure_setup.sh | bash
 echo
 echo
 echo $PWD
 echo
-sshsetup="y"
+sshsetup="n"
 printf "${GREEN}"
 echo "##################  SSH SETUP"
 sleep 1
 echo "START SSH SETUP?  (y/n)"
 echo
+sshsetup="n"
 printf "${BLUE3}"
 read -t 10 -n 1 sshsetup
 if [[ $sshsetup != "n" ]]; then
-  echo SSH KEYS
+  echo SSH KEYS - starting setup
+  sleep 5
 echo
 cd $HOME/setup
 sleep 1
@@ -117,6 +122,7 @@ cd $HOME
 userhome=$HOME
 echo
 printf "${GREEN}"
+keepassxc
 echo "#####################################################  DOTFILES"
 printf "${BLUE2}"
 echo
@@ -161,8 +167,8 @@ if [[ $brewsetup != "n" ]]; then
 fi
 #############################################################
 sudo apt install -y taskwarrior android-tools-adb
-sudo apt install -y python3-pip
-pip3 install --user git+https://github.com/bergercookie/taskwarrior-syncall
+#sudo apt install -y python3-pip
+#pip3 install --user git+https://github.com/bergercookie/taskwarrior-syncall
 
 brew install fd
 brew install fzf
