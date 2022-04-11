@@ -9,6 +9,9 @@ sudo apt update
 apt install sudo -y
 sudo apt install git
 sudo apt install -y nano curl wget nfs-common xclip keepassxc ssh-askpass
+sudo add-apt-repository ppa:phoerious/keepassxc
+sudo apt-get update
+sudo apt-get dist-upgrade
 printf "${BLUE1}"
 echo
 echo SETUP NEW
@@ -48,7 +51,7 @@ chmod +x *
 echo
 sudo mkdir ~/.config
 sudo mkdir ~/.config/keepassxc
-cp keepassxc.ini ~/.config/keepassxc/
+cp ~/setup/keepassxc.ini ~/.config/keepassxc/
 printf "${GREEN}"
 echo "############################# APT"
 printf "${BLUE2}"
