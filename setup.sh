@@ -52,7 +52,6 @@ echo
 sudo mkdir ~/.config
 sudo mkdir ~/.config/keepassxc
 sudo chmod 777 /home/abraxas678/.config/keepassxc -R
-cp ~/setup/keepassxc.ini ~/.config/keepassxc/
 printf "${GREEN}"
 echo "############################# APT"
 printf "${BLUE2}"
@@ -130,8 +129,10 @@ userhome=$HOME
 echo
 printf "${GREEN}"
 eval $(ssh-agent)
+####################################################################################
 echo $SSH_AUTH_SOCK
 echo $SSH_AUTH_SOCK | clip.exe
+cp ~/setup/keepassxc.ini ~/.config/keepassxc/
 sleep 3
 keepassxc &
 echo "#####################################################  DOTFILES"
