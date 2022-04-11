@@ -141,6 +141,7 @@ read me
 echo "#####################################################  DOTFILES"
 printf "${BLUE2}"
 echo
+rm -rf ~/dotfiles
 git clone git@github.com:abraxas678/dotfiles.git
 sudo mv $userhome/dotfiles /mytmp/
 cd /mytmp
