@@ -133,7 +133,7 @@ eval $(ssh-agent)
 echo $SSH_AUTH_SOCK
 echo $SSH_AUTH_SOCK | clip.exe
 sleep 3
-keepassxc
+keepassxc &
 echo "#####################################################  DOTFILES"
 printf "${BLUE2}"
 echo
