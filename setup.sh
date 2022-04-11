@@ -87,10 +87,12 @@ echo "##################  SSH SETUP"
 sleep 1
 echo "START SSH SETUP?  (y/n)"
 echo
+sshsetup="n"
 printf "${BLUE3}"
 read -t 10 -n 1 sshsetup
 if [[ $sshsetup != "n" ]]; then
   echo SSH KEYS - starting setup
+  sleep 5
 echo
 cd $HOME/setup
 sleep 1
