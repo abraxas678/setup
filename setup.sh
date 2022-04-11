@@ -8,7 +8,7 @@ apt update
 sudo apt update 
 apt install sudo -y
 sudo apt install git
-sudo apt install -y nano curl wget nfs-common xclip
+sudo apt install -y nano curl wget nfs-common xclip keepassxc
 printf "${BLUE1}"
 echo
 echo SETUP NEW
@@ -46,11 +46,14 @@ cd setup
 echo; echo $PWD; echo
 chmod +x *
 echo
+sudo mkdir ~/.config
+sudo mkdir ~/.config/keepassxc
+cp keepassxc.ini ~/.config/keepassxc/
 printf "${GREEN}"
 echo "############################# APT"
 printf "${BLUE2}"
 echo "sudo apt install -y keepassxc tmux tmuxinator bat"
-sudo apt install -y keepassxc tmux tmuxinator bat 
+sudo apt install -y tmux tmuxinator bat 
 echo
 printf "${GREEN}"
 echo "#################################### RCLONE"
@@ -122,6 +125,7 @@ cd $HOME
 userhome=$HOME
 echo
 printf "${GREEN}"
+eval $(ssh-agent)
 keepassxc
 echo "#####################################################  DOTFILES"
 printf "${BLUE2}"
