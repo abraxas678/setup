@@ -194,5 +194,8 @@ brew install fd
 brew install fzf
 brew install thefuck
 $(brew --prefix)/opt/fzf/install
+rm $HOME/setup -rf
+cd /
+sudo git clone https://github.com/abraxas678/setup.git
 sudo apt autoremove
 exec zsh
