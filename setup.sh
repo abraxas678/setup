@@ -51,7 +51,7 @@ chmod +x *
 echo
 sudo mkdir ~/.config
 sudo mkdir ~/.config/keepassxc
-sudo chmod 777 /home/abraxas678/.config/keepassxc -R
+sudo chown abraxas678: /home/abraxas678/.config -R
 printf "${GREEN}"
 echo "############################# APT"
 printf "${BLUE2}"
