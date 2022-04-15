@@ -119,6 +119,7 @@ echo
 echo
 echo FONTS
 echo
+myfonts="n"
 echo "WANT TO INSTALL FONTS? (y/n)"
 read -n 1 -t 20 myfonts
 if [[ $myfonts = "y" ]]; then
@@ -186,10 +187,10 @@ printf "${GREEN}"
 echo "######################################################## BREW"
 printf "${BLUE2}"
 echo
-brewsetup="y"
-echo "START BREW SETUP?  (y/n)"
+brewsetup="n"
+echo "START BREW SETUP?  (y/n)              --------------timeouut 20 n"
 echo
-read -t 10 -n 1 brewsetup
+read -t 20 -n 1 brewsetup
 echo
 if [[ $brewsetup != "n" ]]; then
   /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
