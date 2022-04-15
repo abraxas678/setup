@@ -9,9 +9,9 @@ sudo apt update
 apt install sudo -y
 sudo apt install git -y
 sudo apt install -y nano curl wget nfs-common xclip keepassxc ssh-askpass
-sudo add-apt-repository ppa:phoerious/keepassxc
+sudo add-apt-repository ppa:phoerious/keepassxc -y
 sudo apt-get update
-sudo apt-get dist-upgrade
+sudo apt-get dist-upgrade -y
 printf "${BLUE1}"
 echo
 echo SETUP NEW
