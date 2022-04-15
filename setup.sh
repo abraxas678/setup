@@ -31,6 +31,7 @@ sudo mkdir /volume2/docker_final
 sudo apt update && sudo apt install -y curl unzip git wget nfs-common jq
 echo; echo "MOUNT? (y/n)"; echo
 read -n1 domount
+echo
 if [[ $domount = "y" ]];then 
 sudo mount -t nfs 192.168.86.29:volume1/sec /volume1/sec -o nolock
 sudo mount -t nfs 192.168.86.29:volume1/suprsec /volume1/supersec -o nolock
@@ -82,6 +83,7 @@ printf "${BLUE2}"
 rclonesetup="n"
 echo "default: n  --  t 10"
 read -t 10 -n 1 rclonesetup
+echo
 if [[ $rclonesetup = "y" ]]; then
    echo starting rclone setup
    sleep 5
@@ -141,10 +143,12 @@ cp ~/setup/keepassxc.ini ~/.config/keepassxc/
 echo DO NOT CLOSE KEEPASSXC -- CHECK SETTINGS KEYS 
 echo "BUTTON 120"
 read -t 120 me
+echo
 keepassxc &
 echo
 echo KEY WHEN DONE
 read me
+echo
 echo "#####################################################  DOTFILES"
 printf "${BLUE2}"
 echo
@@ -182,6 +186,7 @@ brewsetup="y"
 echo "START BREW SETUP?  (y/n)"
 echo
 read -t 10 -n 1 brewsetup
+echo
 if [[ $brewsetup != "n" ]]; then
   /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
   echo 'eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"' >> /home/abrax/.zprofile
