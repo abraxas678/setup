@@ -7,7 +7,7 @@ sudo chmod +x *.sh
 apt update
 sudo apt update 
 apt install sudo -y
-sudo apt install git
+sudo apt install git -y
 sudo apt install -y nano curl wget nfs-common xclip keepassxc ssh-askpass
 sudo add-apt-repository ppa:phoerious/keepassxc
 sudo apt-get update
