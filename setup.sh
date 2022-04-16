@@ -2,10 +2,6 @@
 echo
 echo "V 446"
 sleep 2
-echo; echo
-echo "sudo apt update && sudo apt upgrade -y"
-echo
-sudo apt update && sudo apt upgrade -y
 #apt install sudo -y
 cd $HOME
 sudo mkdir setup
