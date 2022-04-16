@@ -1,23 +1,41 @@
 #!/bin/bash
+echo; echo
+echo "sudo apt update && sudo apt upgrade -y"
+echo
+sudo apt update && sudo apt upgrade -y
+#apt install sudo -y
+cd $HOME
+sudo mkdir setup
+cd setup
+echo; echo; echo "color.dat"
+echo
+echo "sudo apt install -y wget"
+sudo apt install -y wget
+wget https://github.com/abraxas678/setup/blob/5a8e0f0e2f2712d86ffc51b0e6a675e6c590cc87/color.dat
 source color.dat
+printf "${YELLOW}"
+echo COLOR AB HIER
+echo
+printf "${BLUE1}"
+echo; echo "sudo apt install -y git nano curl nfs-common xclip keepassxc ssh-askpass"
+echo
 printf "${BLUE3}"
-#clear
-cd $HOME/setup
-sudo chmod +x *.sh
-apt update
-sudo apt update 
-apt install sudo -y
-sudo apt install git -y
-sudo apt install -y nano curl wget nfs-common xclip keepassxc ssh-askpass
+sudo apt install -y git nano curl nfs-common xclip keepassxc ssh-askpass
+printf "${BLUE1}"
+echo; echo; echo "INSTALL KEEPASSXC"
+echo
+printf "${BLUE3}"
 sudo add-apt-repository ppa:phoerious/keepassxc -y
 sudo apt-get update
 sudo apt-get dist-upgrade -y
 printf "${BLUE1}"
 echo
-echo SETUP NEW
-echo "======================"
-printf "${GREEN}"
+#echo SETUP NEW
+#echo "======================"
+echo; echo "sudo apt update && sudo apt install -y unzip git nfs-common jq"
+sudo apt update && sudo apt install -y unzip git nfs-common jq
 echo
+printf "${GREEN}"
 echo "######################  MOUNT"
 sleep 1
 printf "${BLUE2}"
@@ -28,7 +46,6 @@ sudo mkdir /volume1/sec
 sudo mkdir /volume1/supersec
 sudo mkdir /volume2/docker
 sudo mkdir /volume2/docker_final
-sudo apt update && sudo apt install -y curl unzip git wget nfs-common jq
 echo; echo "MOUNT? (y/n)"; echo
 read -n1 domount
 echo
