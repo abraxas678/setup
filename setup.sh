@@ -154,6 +154,9 @@ sudo apt update && sudo apt install -y zsh fonts-powerline xz-utils wget
 fi
 ################## GIT REMIND
 cd $HOME; echo
+printf "${GREEN}"
+echo "EINSTELLUNGEN"
+printf "${BLUE3}"
 ######################################   EINSTELLUNGEN
 chsh -s $(which zsh)
 curl -L git.io/antigen > antigen.zsh
