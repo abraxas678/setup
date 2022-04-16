@@ -43,6 +43,9 @@ sudo mkdir /volume1/sec
 sudo mkdir /volume1/supersec
 sudo mkdir /volume2/docker
 sudo mkdir /volume2/docker_final
+echo
+$HOME/setup/check_network.sh
+echo
 echo; echo "MOUNT? (y/n)"; echo
 domount="n"
 read -n1 -t30 domount
@@ -60,6 +63,7 @@ fi
 printf "${GREEN}"
 $HOME/setup/check_network.sh
 sleep 3
+echo
 printf "${GREEN}"
 echo "################################################### GIT"
 sleep 1
