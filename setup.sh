@@ -58,6 +58,9 @@ sudo mount -t nfs 192.168.86.29:volume2/docker /volume2/docker -o nolock
 sudo mount -t nfs 192.168.86.29:volume2/docker_final /volume2/docker_final -o nolock
 fi
 printf "${GREEN}"
+$HOME/setup/check_network.sh
+sleep 3
+printf "${GREEN}"
 echo "################################################### GIT"
 sleep 1
 git config --global user.email abraxas678@gmail.com
