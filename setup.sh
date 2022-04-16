@@ -1,36 +1,58 @@
 #!/bin/bash
+echo
+echo "V 446"
+sleep 2
+#apt install sudo -y
+cd $HOME
+sudo mkdir setup
+cd setup
+echo; echo; echo "COLOR.dat"
+echo
+wget https://github.com/abraxas678/setup/blob/5a8e0f0e2f2712d86ffc51b0e6a675e6c590cc87/color.dat
 source color.dat
+printf "${YELLOW}"
+echo "COLOR AB HIER"
+echo
+printf "${BLUE1}"
+echo; echo "INSTALL nano curl nfs-common xclip keepassxc ssh-askpass"
+echo
 printf "${BLUE3}"
-#clear
-cd $HOME/setup
-sudo chmod +x *.sh
-apt update
-sudo apt update 
-apt install sudo -y
-sudo apt install git -y
-sudo apt install -y nano curl wget nfs-common xclip keepassxc ssh-askpass
-sudo add-apt-repository ppa:phoerious/keepassxc
+sudo apt install -y git nano curl nfs-common xclip keepassxc ssh-askpass
+printf "${BLUE1}"
+echo; echo; echo "INSTALL KEEPASSXC"
+echo
+printf "${BLUE3}"
+sudo add-apt-repository ppa:phoerious/keepassxc -y
 sudo apt-get update
-sudo apt-get dist-upgrade
+sudo apt-get dist-upgrade -y
 printf "${BLUE1}"
 echo
-echo SETUP NEW
-echo "======================"
-printf "${GREEN}"
+#echo SETUP NEW
+#echo "======================"
+echo; echo "INSTALL unzip git nfs-common jq"
+sudo apt install -y unzip git nfs-common jq
 echo
+printf "${GREEN}"
 echo "######################  MOUNT"
 sleep 1
 printf "${BLUE2}"
-echo "MKDIR"
+echo "MKDIR MOUNT"
 sudo mkdir /volume1
 sudo mkdir /volume2
 sudo mkdir /volume1/sec
 sudo mkdir /volume1/supersec
 sudo mkdir /volume2/docker
 sudo mkdir /volume2/docker_final
-sudo apt update && sudo apt install -y curl unzip git wget nfs-common jq
+echo
+$HOME/setup/check_network.sh
+echo
 echo; echo "MOUNT? (y/n)"; echo
-read -n1 domount
+domount="n"
+read -n1 -t30 domount
+echo
+printf "${YELLOW}"
+echo "NFS MOUNT"
+printf "${BLUE3}"
 echo
 if [[ $domount = "y" ]];then 
 sudo mount -t nfs 192.168.86.29:volume1/sec /volume1/sec -o nolock
@@ -38,6 +60,10 @@ sudo mount -t nfs 192.168.86.29:volume1/suprsec /volume1/supersec -o nolock
 sudo mount -t nfs 192.168.86.29:volume2/docker /volume2/docker -o nolock
 sudo mount -t nfs 192.168.86.29:volume2/docker_final /volume2/docker_final -o nolock
 fi
+printf "${GREEN}"
+$HOME/setup/check_network.sh
+sleep 3
+echo
 printf "${GREEN}"
 echo "################################################### GIT"
 sleep 1
@@ -48,9 +74,7 @@ printf "${GREEN}"
 echo "##################### CLONE /SETUP"
 sleep 1
 printf "${BLUE2}"
-cd $HOME
-git clone https://github.com/abraxas678/setup.git
-cd setup
+cd $HOME/setup
 echo; echo $PWD; echo
 chmod +x *
 echo
@@ -59,8 +83,10 @@ sudo mkdir ~/.config/keepassxc
 sudo chown abraxas678: /home/abraxas678/.config -R
 printf "${GREEN}"
 echo "############################# APT"
-printf "${BLUE2}"
-echo "sudo apt install -y tmux tmuxinator bat"
+printf "${BLUE1}"
+echo
+echo "INSTALL tmux tmuxinator bat"
+echo
 sudo apt install -y tmux tmuxinator bat 
 echo
 printf "${GREEN}"
@@ -72,10 +98,10 @@ echo $PWD
 echo
 echo
 printf "${BLUE1}"
-echo ".conf vor setup:"
-echo
+echo ".conf vor setup (existiert schon?):"
 cat $HOME/.config/rclone/rclone.conf
 echo
+sleep 5
 printf "${GREEN}"
 echo "START RCLONE SETUP?  (y/n)"
 echo
@@ -119,14 +145,22 @@ echo
 echo
 echo FONTS
 echo
+myfonts="n"
+echo "WANT TO INSTALL FONTS? (y/n)"
+read -n 1 -t 20 myfonts
+if [[ $myfonts = "y" ]]; then
 #https://github.com/romkatv/powerlevel10k-media/raw/master/MesloLGS%20NF%20Regular.ttf
 curl -X POST -H "Content-Type: application/json" -d '{"myvar1":"foo","myvar2":"bar","myvar3":"foobar"}' "https://joinjoaomgcd.appspot.com/_ah/api/messaging/v1/sendPush?apikey=304c57b5ddbd4c10b03b76fa97d44559&deviceNames=razer,Chrome,ChromeRazer&text=play%20install%20this%20font&url=https%3A%2F%2Fgithub.com%2Fromkatv%2Fpowerlevel10k-media%2Fraw%2Fmaster%2FMesloLGS%2520NF%2520Regular.ttf&file=https%3A%2F%2Fgithub.com%2Fromkatv%2Fpowerlevel10k-media%2Fraw%2Fmaster%2FMesloLGS%2520NF%2520Regular.ttf&say=please%20install%20this%20font"
 sudo apt update && sudo apt install -y zsh fonts-powerline xz-utils wget  
 ###mlocate  -----> in tmu aufsetzen
 ###### https://github.com/suin/git-remind
 #sleep 1
+fi
 ################## GIT REMIND
 cd $HOME; echo
+printf "${GREEN}"
+echo "EINSTELLUNGEN"
+printf "${BLUE3}"
 ######################################   EINSTELLUNGEN
 chsh -s $(which zsh)
 curl -L git.io/antigen > antigen.zsh
@@ -182,10 +216,10 @@ printf "${GREEN}"
 echo "######################################################## BREW"
 printf "${BLUE2}"
 echo
-brewsetup="y"
-echo "START BREW SETUP?  (y/n)"
+brewsetup="n"
+echo "START BREW SETUP?  (y/n)              --------------timeouut 20 n"
 echo
-read -t 10 -n 1 brewsetup
+read -t 20 -n 1 brewsetup
 echo
 if [[ $brewsetup != "n" ]]; then
   /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
@@ -205,8 +239,12 @@ brew install thefuck
 $(brew --prefix)/opt/fzf/install
 sudo apt-get install conky-all -y
 brew install gcalcli
-rm $HOME/setup -rf
-cd /
-sudo git clone https://github.com/abraxas678/setup.git
-sudo apt autoremove
+sudo mv $HOME/setup /setup
+echo
+echo AUTOREMOVE
+echo
+sudo apt autoremove -y
+echo
+echo EXEC ZSH
+echo
 exec zsh
