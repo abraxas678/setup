@@ -33,7 +33,7 @@ echo
 #echo SETUP NEW
 #echo "======================"
 echo; echo "sudo apt update && sudo apt install -y unzip git nfs-common jq"
-sudo apt update && sudo apt install -y unzip git nfs-common jq
+sudo apt install -y unzip git nfs-common jq
 echo
 printf "${GREEN}"
 echo "######################  MOUNT"
@@ -47,7 +47,8 @@ sudo mkdir /volume1/supersec
 sudo mkdir /volume2/docker
 sudo mkdir /volume2/docker_final
 echo; echo "MOUNT? (y/n)"; echo
-read -n1 domount
+domount="n"
+read -n1 -t30 domount
 echo
 if [[ $domount = "y" ]];then 
 sudo mount -t nfs 192.168.86.29:volume1/sec /volume1/sec -o nolock
