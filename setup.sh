@@ -6,17 +6,15 @@ sleep 2
 cd $HOME
 sudo mkdir setup
 cd setup
-echo; echo; echo "color.dat"
+echo; echo; echo "COLOR.dat"
 echo
-echo "sudo apt install -y wget"
-sudo apt install -y wget
 wget https://github.com/abraxas678/setup/blob/5a8e0f0e2f2712d86ffc51b0e6a675e6c590cc87/color.dat
 source color.dat
 printf "${YELLOW}"
-echo COLOR AB HIER
+echo "COLOR AB HIER"
 echo
 printf "${BLUE1}"
-echo; echo "sudo apt install -y git nano curl nfs-common xclip keepassxc ssh-askpass"
+echo; echo "INSTALL nano curl nfs-common xclip keepassxc ssh-askpass"
 echo
 printf "${BLUE3}"
 sudo apt install -y git nano curl nfs-common xclip keepassxc ssh-askpass
@@ -31,14 +29,14 @@ printf "${BLUE1}"
 echo
 #echo SETUP NEW
 #echo "======================"
-echo; echo "sudo apt update && sudo apt install -y unzip git nfs-common jq"
+echo; echo "INSTALL unzip git nfs-common jq"
 sudo apt install -y unzip git nfs-common jq
 echo
 printf "${GREEN}"
 echo "######################  MOUNT"
 sleep 1
 printf "${BLUE2}"
-echo "MKDIR"
+echo "MKDIR MOUNT"
 sudo mkdir /volume1
 sudo mkdir /volume2
 sudo mkdir /volume1/sec
@@ -48,6 +46,10 @@ sudo mkdir /volume2/docker_final
 echo; echo "MOUNT? (y/n)"; echo
 domount="n"
 read -n1 -t30 domount
+echo
+printf "${YELLOW}"
+echo "NFS MOUNT"
+printf "${BLUE3}"
 echo
 if [[ $domount = "y" ]];then 
 sudo mount -t nfs 192.168.86.29:volume1/sec /volume1/sec -o nolock
@@ -65,9 +67,7 @@ printf "${GREEN}"
 echo "##################### CLONE /SETUP"
 sleep 1
 printf "${BLUE2}"
-cd $HOME
-git clone https://github.com/abraxas678/setup.git
-cd setup
+cd $HOME/setup
 echo; echo $PWD; echo
 chmod +x *
 echo
@@ -76,8 +76,10 @@ sudo mkdir ~/.config/keepassxc
 sudo chown abraxas678: /home/abraxas678/.config -R
 printf "${GREEN}"
 echo "############################# APT"
-printf "${BLUE2}"
-echo "sudo apt install -y tmux tmuxinator bat"
+printf "${BLUE1}"
+echo
+echo "INSTALL tmux tmuxinator bat"
+echo
 sudo apt install -y tmux tmuxinator bat 
 echo
 printf "${GREEN}"
@@ -89,10 +91,10 @@ echo $PWD
 echo
 echo
 printf "${BLUE1}"
-echo ".conf vor setup:"
-echo
+echo ".conf vor setup (existiert schon?):"
 cat $HOME/.config/rclone/rclone.conf
 echo
+sleep 5
 printf "${GREEN}"
 echo "START RCLONE SETUP?  (y/n)"
 echo
