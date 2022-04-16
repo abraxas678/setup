@@ -1,4 +1,7 @@
 #!/bin/bash
+echo
+echo "V 446"
+sleep 2
 echo; echo
 echo "sudo apt update && sudo apt upgrade -y"
 echo
