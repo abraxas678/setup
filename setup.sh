@@ -239,8 +239,12 @@ brew install thefuck
 $(brew --prefix)/opt/fzf/install
 sudo apt-get install conky-all -y
 brew install gcalcli
-rm $HOME/setup -rf
-cd /
-sudo git clone https://github.com/abraxas678/setup.git
-sudo apt autoremove
+sudo mv $HOME/setup /setup
+echo
+echo AUTOREMOVE
+echo
+sudo apt autoremove -y
+echo
+echo EXEC ZSH
+echo
 exec zsh
