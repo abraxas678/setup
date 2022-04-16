@@ -90,6 +90,13 @@ echo
 sudo apt install -y tmux tmuxinator bat 
 echo
 printf "${GREEN}"
+echo "#################################### SSH-KEYS"
+echo
+printf "${BLUE3}"
+sh $HOME/setup/setup_shh.sh
+echo
+echo
+printf "${GREEN}"
 echo "#################################### RCLONE"
 printf "${BLUE2}"
 sleep 1
@@ -191,7 +198,7 @@ rm -rf ~/dotfiles
 git clone git@github.com:abraxas678/dotfiles.git
 sudo mv $userhome/dotfiles /mytmp/
 cd /mytmp
-rclone move /mytmp/dotfiles/ $HOME/ -P -v
+move /mytmp/dotfiles/ $HOME/ -P -v
 cd $HOME
 sudo rm -rf /mytmp
 printf "${GREEN}"
